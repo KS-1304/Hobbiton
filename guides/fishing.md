@@ -33,3 +33,7 @@ Pick up any mermaids caught in seaweed, these trigger a multiplier.
 Chests are always worth the catch.
 
 You can use the codex to work out which fish get the most points.
+
+## Tips
+
+Don't use Horn of the Tides at the same time as Ocean Prospector.
