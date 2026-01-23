@@ -1,3 +1,5 @@
+
+
 theme: jekyll-theme-cayman
 
 nav1:
@@ -7,3 +9,7 @@ nav1:
 nav2:
   name: "Hobbiton Discord"
   url: "https://discord.gg/aQnrnQeYt7"
+
+
+- name: Github Pages Directory Listing
+  uses: jayanta525/github-pages-directory-listing@v4.0.0
