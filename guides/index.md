@@ -10,6 +10,7 @@
 * [Eternity's Reach](./eternityreach)
 * [Swordland Showdown](./swordland)
 * [Mystic Trial](./mystic)
+* [Fishing](./fishing)
 
 
 ## External Guides
