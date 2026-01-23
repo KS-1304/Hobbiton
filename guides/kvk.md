@@ -47,6 +47,34 @@ The prep phase is split into 5 days:
 * Use Speedups (if you have any left)
 * Use Truegold (if you have any left)
 
+### Summary
+
+| TASK | Day-1<br>City Up | Day-2<br>Basic Up | Day-3<br>Pet Training | Day-4<br>Hero Dev | Day-5<br>Power Boost |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Use Truegold** | 🟢 BEST | | | | 🟡 Optional |
+| **Use Speedups - Construction** | 🟢 BEST | | | | 🟡 Optional |
+| **Use Speedups - Research** | 🟡 Optional | 🟢 BEST | | | 🟢 BEST |
+| **Use Upgrade Gov Charm** | 🟢 BEST | | 🟡 Optional | 🟡 Optional | |
+| **Use Upgrade Gov Gear** | 🔴 DON'T | | | | 🟢 BEST |
+| **Finish Intel Mission** | 🟢 BEST (8 utc) | 🔴 DON'T | 🟢 BEST (8 utc) | 🔴 DON'T  | 🟢 BEST (8 utc) |
+| | | | | | |
+| **Spin Hero Roulette** | | 🟢 BEST | 🟡 Optional | | |
+| **Use Hero Shards (Rare/Epic/Mythic)** | | 🟢 BEST | 🟡 Optional | | |
+| **Use Mithril** | | | | 🟡 Optional | 🟢 BEST |
+| **Use Forgehammer(s)** | | | | 🔴 DON'T | 🟢 BEST |
+| **Use Hero Widget** | | | | 🔴 DON'T | 🟢 BEST |
+| | | | | | |
+| **Use Speedups (Training/Promote)** | 🔴 DON'T | 🔴 DON'T | | 🟢 BEST | |
+| **Pet Advancement** | | | 🟢 BEST | | |
+| **Use Taming Mark** | | | 🟢 BEST | | 🟡 Optional |
+| **Gathering RSS** | | 🟢 BEST | | 🟢 BEST | |
+
+
+> **Legend:**
+> 🟢 **BEST:** Optimal time to perform task
+> 🟡 **Optional:** Secondary option
+> 🔴 **DON'T:** Avoid performing task
+
 ## Battle Day
 
 Players from both kingdoms can teleport to each other’s territory using Cross-Kingdom Teleporters.
