@@ -49,14 +49,14 @@ The prep phase is split into 5 days:
 
 ### Summary
 
-| TASK | Day-1<br>City Up | Day-2<br>Basic Up | Day-3<br>Pet Training | Day-4<br>Hero Dev | Day-5<br>Power Boost |
+| TASK | Day-1 | Day-2 | Day-3 | Day-4 | Day-5 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Use Truegold** | 🟢 BEST | | | | 🟡 Optional |
 | **Use Speedups - Construction** | 🟢 BEST | | | | 🟡 Optional |
 | **Use Speedups - Research** | 🟡 Optional | 🟢 BEST | | | 🟢 BEST |
 | **Use Upgrade Gov Charm** | 🟢 BEST | | 🟡 Optional | 🟡 Optional | |
 | **Use Upgrade Gov Gear** | 🔴 DON'T | | | | 🟢 BEST |
-| **Finish Intel Mission** | 🟢 BEST (8 utc) | 🔴 DON'T | 🟢 BEST (8 utc) | 🔴 DON'T  | 🟢 BEST (8 utc) |
+| **Finish Intel Mission** | 🟢 BEST | 🔴 DON'T | 🟢 BEST | 🔴 DON'T  | 🟢 BEST |
 | | | | | | |
 | **Spin Hero Roulette** | | 🟢 BEST | 🟡 Optional | | |
 | **Use Hero Shards (Rare/Epic/Mythic)** | | 🟢 BEST | 🟡 Optional | | |
