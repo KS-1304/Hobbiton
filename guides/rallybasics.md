@@ -1,3 +1,4 @@
+# Rally Basics
 When hosting a rally, all of your hero's expedition skills (the ones on the right) are used.
 
 In addition to your hero skills, 4 skills are picked from the heros that join your rally.
