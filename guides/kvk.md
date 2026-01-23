@@ -66,3 +66,11 @@ If an alliance from the same kingdom that holds the King’s Castle also capture
 2 turrets: +12% Squad Lethality
 3 turrets: +15% Squad Lethality
 4 turrets: +20% Squad Lethality
+
+## Triage Phase
+
+Troops that were completly lost (Lost in battle, that didn't go to your Infirmary or Enlistment Office) can be rescued.
+
+Between Medical Satchels (bought using gems), and Rescue Orders (gifted from alliance members) you can rescue rate up to 90% of your lost troops.
+
+Each member of the alliance gets 20 rescue orders to give to other members.  Each order helps rescuse 1% of the reciving players lost troops.
