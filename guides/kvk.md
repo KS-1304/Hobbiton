@@ -73,4 +73,4 @@ Troops that were completly lost (Lost in battle, that didn't go to your Infirmar
 
 Between Medical Satchels (bought using gems), and Rescue Orders (gifted from alliance members) you can rescue rate up to 90% of your lost troops.
 
-Each member of the alliance gets 20 rescue orders to give to other members.  Each order helps rescuse 1% of the reciving players lost troops.
+Each member of the alliance gets 20 rescue orders to give to other members.  Each order helps rescue 1% of the reciving players lost troops.
