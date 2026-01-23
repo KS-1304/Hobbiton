@@ -4,7 +4,7 @@
 * [Rally Basics](./rallybasics)
 * [Joining Bear Rallies](./bearjoin)
 * [Hosting Bear Rallies](./bearhost)
-* [Kingdown Vs Kingdom (KvK)](./kvk)
+* [Kingdom of Power (KvK)](./kvk)
 * [Eternity's Reach](./eternityreach)
 * [Merchant Empire](./merchant)
 * [Mystic Trial](./mystic)
