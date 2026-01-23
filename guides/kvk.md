@@ -1,0 +1,1 @@
+KvK or Kingdom vs Kingdom is an event in Kingshot
