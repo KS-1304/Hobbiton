@@ -103,3 +103,13 @@ Attacking players will need to take turns to allow troops to heal.
 In the last 10 minutes of the game, focus on the Swordshrine using coordinated rallies.
 
 Don't forget to activate any Buffs, or pet skills before starting the event.
+
+## Tips and Mechanics
+
+You get free heals and teleports as part of the event.  These are on cooldowns.  Beyond these, and you start eating into your own stock.
+
+It also doubles in cost to use paid teleports, so using 3 paid teleports within 5 mins might end up using 7 advanced teleporters.
+
+If you end up wiping out all your toops early, you can click 'Leave Battlefield'.  After 12 minutes your troops will be healed and you can rejoin.
+
+Attacking the enemies towns will cause the player to teleport away, this will cause them to leaveg the buildings they are garrisoned in.

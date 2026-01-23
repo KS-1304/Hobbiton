@@ -59,13 +59,11 @@ The prep phase is split into 5 days:
 | **Use Upgrade Gov Charm** | 🟢 BEST | | 🟡 Optional | 🟡 Optional | |
 | **Use Upgrade Gov Gear** | 🔴 DON'T | | | | 🟢 BEST |
 | **Finish Intel Mission** | 🟢 BEST | 🔴 DON'T | 🟢 BEST | 🔴 DON'T  | 🟢 BEST |
-| | | | | | |
 | **Spin Hero Roulette** | | 🟢 BEST | 🟡 Optional | | |
 | **Use Hero Shards (Rare/Epic/Mythic)** | | 🟢 BEST | 🟡 Optional | | |
 | **Use Mithril** | | | | 🟡 Optional | 🟢 BEST |
 | **Use Forgehammer(s)** | | | | 🔴 DON'T | 🟢 BEST |
 | **Use Hero Widget** | | | | 🔴 DON'T | 🟢 BEST |
-| | | | | | |
 | **Use Speedups (Training/Promote)** | 🔴 DON'T | 🔴 DON'T | | 🟢 BEST | |
 | **Pet Advancement** | | | 🟢 BEST | | |
 | **Use Taming Mark** | | | 🟢 BEST | | 🟡 Optional |
@@ -101,6 +99,6 @@ If an alliance from the same kingdom that holds the King’s Castle also capture
 
 Troops that were completly lost (Lost in battle, that didn't go to your Infirmary or Enlistment Office) can be rescued.
 
-Between Medical Satchels (bought using gems), and Rescue Orders (gifted from alliance members) you can rescue rate up to 90% of your lost troops.
+Between Medical Satchels (bought using 550 gems), and Rescue Orders (gifted from alliance members) you can rescue rate up to 90% of your lost troops.
 
 Each member of the alliance gets 20 rescue orders to give to other members.  Each order helps rescue 1% of the reciving players lost troops.
