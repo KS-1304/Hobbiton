@@ -7,6 +7,7 @@
 * [Kingdown Vs Kingdom (KvK)](./kvk)
 * [Eternity's Reach](./eternityreach)
 * [Merchant Empire](./merchant)
+* [Mystic Trial](./mystic)
 
 
 ## External Guides

@@ -1,20 +1,25 @@
-# KvK
-KvK or Kingdom vs Kingdom is an event in Kingshot.
+# Kingdom of Power (KvK) Event
 
 The event is split into phases.
+
+## Matchmaking Phase
+
+In this phase, we are matched up against another kingdom with a similar power level.
+
+If there isn't a match, we get a small reward, and the event ends.
 
 ## Prep Phase
 
 The prep phase is split into 5 days:
 
 ### Day 1 - City Up
-* Use any Truegold
-* Use construction speed ups
+* Use Truegold
+* Use construction speedups
 * Upgrade Gov Charms
 * Intel Missions
 
 ### Day 2 - Basic Up
-* Use research speed ups
+* Use research speedups
 * Spin hero Roulette
 * Use Hero Shards
 * Gather Resources
@@ -23,23 +28,41 @@ The prep phase is split into 5 days:
 * Raise Pet Advancement
 * Use Common and Advanced Training Marks
 * Intel Missions
+* _Optional: Upgrade Gov Charms_
 
 ### Day 4 - Troops
 * Promote and Train Troops
-* Use Training Speedups
+* Use Training speedups
 * Gather Resources
+* _Optional: Upgrade Gov Charms_
+* _Optional: Use Mirthril_
 
 ### Day 5 - Power Boost
-* Use Rearch Speedups
+* Use Rearch speedups
 * Upgrade Gov Gear
 * Use Mithril
 * Use Forgehammers
 * Use Widgets
 * Intel Missions
+* Use Speedups (if you have any left)
+* Use Truegold (if you have any left)
 
 ## Battle Day
 
-The kingdom who did the best during the prep phase get's to invade the other kingdom
+Players from both kingdoms can teleport to each other’s territory using Cross-Kingdom Teleporters.
+
+You can attack players from the opposing kingdom.  You’ll earn points if their Town Center is within 3 levels of yours.
+
+This phase lasts for 12 hours, from 10:00 UTC to 22:00 UTC.
+
+The kingdom who did the best during the prep phase get's to attack the other kingdom's castle.
 
 10:00 UTC - Cross Kingdom Opens  
-11:00 UTC - Castle Battle
+12:00 UTC - Castle Battle
+
+If an alliance from the same kingdom that holds the King’s Castle also captures the turrets, each turret gives a Lethality Bonus to the squads from that kingdom. The more turrets they control, the bigger the bonus:
+
+1 turret: +8% Squad Lethality
+2 turrets: +12% Squad Lethality
+3 turrets: +15% Squad Lethality
+4 turrets: +20% Squad Lethality
