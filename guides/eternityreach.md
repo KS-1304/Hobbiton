@@ -1,4 +1,4 @@
-# Eternity's Reach
+# Eternity's Reach Event
 
 At the start of the match the most important thing to do is level up your skills.
 

@@ -23,6 +23,7 @@ The prep phase is split into 5 days:
 * Spin hero Roulette
 * Use Hero Shards
 * Gather Resources
+* **Skip Last Intel missions before reset**
 
 ### Day 3 - Pets
 * Raise Pet Advancement
@@ -36,6 +37,7 @@ The prep phase is split into 5 days:
 * Gather Resources
 * _Optional: Upgrade Gov Charms_
 * _Optional: Use Mirthril_
+* **Skip Last Intel missions before reset**
 
 ### Day 5 - Power Boost
 * Use Rearch speedups

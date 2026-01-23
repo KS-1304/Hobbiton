@@ -1,4 +1,4 @@
-# Merchant Empire
+# Merchant Empire Event
 
 This event lasts for 7 days, you can dispatch caravans on the first 6 days.
 

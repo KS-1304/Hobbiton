@@ -5,8 +5,10 @@
 * [Joining Bear Rallies](./bearjoin)
 * [Hosting Bear Rallies](./bearhost)
 * [Kingdom of Power (KvK)](./kvk)
-* [Eternity's Reach](./eternityreach)
+* [Viking Vengeance](./vikings)
 * [Merchant Empire](./merchant)
+* [Eternity's Reach](./eternityreach)
+* [Swordland Showdown](./swordland)
 * [Mystic Trial](./mystic)
 
 
