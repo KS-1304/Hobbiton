@@ -27,4 +27,4 @@ If you have 9 rally hosts online, a good combo would be to have 3 players start 
 
 ## Rally Joining
 
-[For details on rally joning see here](./bearjoin)
+[For details on rally joning see here.](./bearjoin)

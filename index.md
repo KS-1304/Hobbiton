@@ -1,5 +1,3 @@
-Welcome to Hobbiton #1304
-
 ## Decree
 💚Hobbiton — Protectors of the Realm 💚
 

@@ -36,4 +36,4 @@ So to send out 3 full rallies with the optimal ratios you would need at least 14
 
 ## Rally Hosting
 
-[For details on rally hosting see here](./bearhost)
+[For details on rally hosting see here.](./bearhost)
