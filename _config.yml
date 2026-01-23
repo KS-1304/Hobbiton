@@ -1,1 +1,9 @@
 theme: jekyll-theme-cayman
+
+nav1:
+  name: "Guides"
+  url: "/guides"
+
+nav2:
+  name: "Hobbiton Discord"
+  url: "https://discord.gg/aQnrnQeYt7"
