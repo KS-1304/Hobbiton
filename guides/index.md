@@ -1,3 +1,3 @@
-<a href="../" class="btn">Return Home</a>
+[Return Home](../)
 
-<a href="kvk.md" class="btn">Kingdown Vs Kingdom (KvK)</a>
+[Kingdown Vs Kingdom (KvK)](./kvk)
