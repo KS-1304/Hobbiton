@@ -2085,7 +2085,7 @@
     var overLayers = [
 
       {
-        group: "Altars/Outposts",
+        group: "Outposts",
         collapsed: false,
         layers: [
           {
@@ -2144,7 +2144,7 @@
 
     // method that we will use to update the control based on feature properties passed
     info.update = function (props, coords) {
-      this._div.innerHTML = '<h4>Altar Details</h4>' + (props ?
+      this._div.innerHTML = '<h4>Outpost Details</h4>' + (props ?
         props.Type + ' L' + props.level + '</br>X' + coords.coordinates[0] + ',Y' + coords.coordinates[1] + '<br />Buff: ' + props.buff + '<br />Held By:' + props.OWNER
         : 'Hover over an outpost');
     };
