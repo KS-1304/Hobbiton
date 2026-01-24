@@ -147,6 +147,11 @@
       height: 20px;
     }
 
+    .touching-glow {
+      box-shadow: 0 0 12px 10px white !important;
+      z-index: 1000 !important;
+    }
+
     /* Modal styles for editing owner */
     .owner-modal-overlay {
       position: fixed;
@@ -357,7 +362,7 @@
       [0, 1200],
       [1200, 1200],
       [1200, 0]
-    ], { color: 'darkolivegreen' }).addTo(map);
+    ], { color: 'green' }).addTo(map);
 
     // Draw plains boundary
     var polygon = L.polygon([
@@ -410,7 +415,7 @@
           html: iconmap[feature.properties.icon],
           iconSize: [42, 42],
           iconAnchor: [21, 21],
-          className: 'myDivIcon ' + feature.properties.OWNER
+          className: 'myDivIcon ' + feature.properties.OWNER + (feature.properties.touching ? ' touching-glow' : '')
         })
       );
       // Update tooltip with new owner
@@ -435,6 +440,12 @@
         </div>
         <label for="owner-input">Owner:</label>
         <input type="text" id="owner-input" value="${feature.properties.OWNER}" maxlength="10" autofocus>
+        
+        <div style="margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
+          <input type="checkbox" id="touching-input" ${feature.properties.touching ? 'checked' : ''} style="width: auto; margin-bottom: 0;">
+          <label for="touching-input" style="margin-bottom: 0;">Touching</label>
+        </div>
+
         <div class="owner-modal-buttons">
           <button class="cancel-btn">Cancel</button>
           <button class="save-btn">Save</button>
@@ -461,9 +472,25 @@
 
       // Save function
       function saveOwner() {
-        var newOwner = input.value.trim();
+        var ownerInput = modal.querySelector('#owner-input');
+        var touchingInput = modal.querySelector('#touching-input');
+
+        var newOwner = ownerInput.value.trim();
+        var newTouching = touchingInput.checked;
+
+        var changed = false;
+
         if (newOwner && newOwner !== feature.properties.OWNER) {
           feature.properties.OWNER = newOwner;
+          changed = true;
+        }
+
+        if (newTouching !== feature.properties.touching) {
+          feature.properties.touching = newTouching;
+          changed = true;
+        }
+
+        if (changed) {
           updateLayerDisplay(feature, layer);
           // Update info pane if visible
           info.update(feature.properties, feature.geometry);
@@ -503,7 +530,7 @@
             html: iconmap[feature.properties.icon],
             iconSize: [42, 42],
             iconAnchor: [21, 21],
-            className: 'myDivIcon ' + feature.properties.OWNER
+            className: 'myDivIcon ' + feature.properties.OWNER + (feature.properties.touching ? ' touching-glow' : '')
           })
         );
         layer.bindTooltip(feature.properties.Type + ' L' + feature.properties.level + '</br>X:' + feature.geometry.coordinates[0] + ' Y:' + feature.geometry.coordinates[1] + '</br>Buff: ' + feature.properties.buff + '<br />Held By:' + feature.properties.OWNER);
@@ -532,7 +559,8 @@
             "icon": "armory",
             "level": 2,
             "buff": "Troop DEF +5%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -549,7 +577,8 @@
             "icon": "armory",
             "level": 2,
             "buff": "Troop DEF +5%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -566,7 +595,8 @@
             "icon": "armory",
             "level": 2,
             "buff": "Troop DEF +5%",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -583,7 +613,8 @@
             "icon": "armory",
             "level": 2,
             "buff": "Troop DEF +5%",
-            "OWNER": "LMA"
+            "OWNER": "LMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -600,7 +631,8 @@
             "icon": "armory",
             "level": 2,
             "buff": "Troop DEF +5%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -617,7 +649,8 @@
             "icon": "armory",
             "level": 2,
             "buff": "Troop DEF +5%",
-            "OWNER": "LgN"
+            "OWNER": "LgN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -634,7 +667,8 @@
             "icon": "armory",
             "level": 2,
             "buff": "Troop DEF +5%",
-            "OWNER": "HOB"
+            "OWNER": "HOB",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -651,7 +685,8 @@
             "icon": "armory",
             "level": 2,
             "buff": "Troop DEF +5%",
-            "OWNER": "KVK"
+            "OWNER": "KVK",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -668,7 +703,8 @@
             "icon": "armory",
             "level": 2,
             "buff": "Troop DEF +5%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -685,7 +721,8 @@
             "icon": "armory",
             "level": 4,
             "buff": "Troop DEF +8%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -702,7 +739,8 @@
             "icon": "armory",
             "level": 4,
             "buff": "Troop DEF +8%",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -719,7 +757,8 @@
             "icon": "arsenal",
             "level": 2,
             "buff": "Troop ATT +5%",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -736,7 +775,8 @@
             "icon": "arsenal",
             "level": 2,
             "buff": "Troop ATT +5%",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -753,7 +793,8 @@
             "icon": "arsenal",
             "level": 2,
             "buff": "Troop ATT +5%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -770,7 +811,8 @@
             "icon": "arsenal",
             "level": 2,
             "buff": "Troop ATT +5%",
-            "OWNER": "LgN"
+            "OWNER": "LgN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -787,7 +829,8 @@
             "icon": "arsenal",
             "level": 2,
             "buff": "Troop ATT +5%",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -804,7 +847,8 @@
             "icon": "arsenal",
             "level": 2,
             "buff": "Troop ATT +5%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -821,7 +865,8 @@
             "icon": "arsenal",
             "level": 2,
             "buff": "Troop ATT +5%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -838,7 +883,8 @@
             "icon": "arsenal",
             "level": 2,
             "buff": "Troop ATT +5%",
-            "OWNER": "CCC"
+            "OWNER": "CCC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -855,7 +901,8 @@
             "icon": "arsenal",
             "level": 4,
             "buff": "Troop ATT +8%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -872,7 +919,8 @@
             "icon": "arsenal",
             "level": 4,
             "buff": "Troop ATT +8%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -889,7 +937,8 @@
             "icon": "arsenal",
             "level": 4,
             "buff": "Troop ATT +8%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -906,7 +955,8 @@
             "icon": "builders",
             "level": 1,
             "buff": "Construction Speed +5%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -923,7 +973,8 @@
             "icon": "builders",
             "level": 1,
             "buff": "Construction Speed +5%",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -940,7 +991,8 @@
             "icon": "builders",
             "level": 1,
             "buff": "Construction Speed +5%",
-            "OWNER": "LMA"
+            "OWNER": "LMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -957,7 +1009,8 @@
             "icon": "builders",
             "level": 1,
             "buff": "Construction Speed +5%",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -974,7 +1027,8 @@
             "icon": "builders",
             "level": 1,
             "buff": "Construction Speed +5%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -991,7 +1045,8 @@
             "icon": "builders",
             "level": 3,
             "buff": "Construction Speed +8%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1008,7 +1063,8 @@
             "icon": "builders",
             "level": 3,
             "buff": "Construction Speed +8%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1025,7 +1081,8 @@
             "icon": "builders",
             "level": 3,
             "buff": "Construction Speed +8%",
-            "OWNER": "LgN"
+            "OWNER": "LgN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1042,7 +1099,8 @@
             "icon": "builders",
             "level": 3,
             "buff": "Construction Speed +8%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1059,7 +1117,8 @@
             "icon": "builders",
             "level": 1,
             "buff": "Construction Speed +5%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1076,7 +1135,8 @@
             "icon": "builders",
             "level": 1,
             "buff": "Construction Speed +5%",
-            "OWNER": "HoW"
+            "OWNER": "HoW",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1093,7 +1153,8 @@
             "icon": "builders",
             "level": 1,
             "buff": "Construction Speed +5%",
-            "OWNER": "fra"
+            "OWNER": "fra",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1110,7 +1171,8 @@
             "icon": "drill",
             "level": 2,
             "buff": "Training Speed + 5%",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1127,7 +1189,8 @@
             "icon": "drill",
             "level": 2,
             "buff": "Training Speed + 5%",
-            "OWNER": "HOB"
+            "OWNER": "HOB",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1144,7 +1207,8 @@
             "icon": "drill",
             "level": 2,
             "buff": "Training Speed + 5%",
-            "OWNER": "LgN"
+            "OWNER": "LgN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1161,7 +1225,8 @@
             "icon": "drill",
             "level": 2,
             "buff": "Training Speed + 5%",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1178,7 +1243,8 @@
             "icon": "drill",
             "level": 2,
             "buff": "Training Speed + 5%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1195,7 +1261,8 @@
             "icon": "drill",
             "level": 2,
             "buff": "Training Speed + 5%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1212,7 +1279,8 @@
             "icon": "drill",
             "level": 2,
             "buff": "Training Speed + 5%",
-            "OWNER": "41a"
+            "OWNER": "41a",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1229,7 +1297,8 @@
             "icon": "foragers",
             "level": 1,
             "buff": "Gathering Speed +5%",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1246,7 +1315,8 @@
             "icon": "foragers",
             "level": 1,
             "buff": "Gathering Speed +5%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1263,7 +1333,8 @@
             "icon": "foragers",
             "level": 1,
             "buff": "Gathering Speed +5%",
-            "OWNER": "LgN"
+            "OWNER": "LgN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1280,7 +1351,8 @@
             "icon": "foragers",
             "level": 1,
             "buff": "Gathering Speed +5%",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1297,7 +1369,8 @@
             "icon": "foragers",
             "level": 1,
             "buff": "Gathering Speed +5%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1314,7 +1387,8 @@
             "icon": "foragers",
             "level": 1,
             "buff": "Gathering Speed +5%",
-            "OWNER": "CCC"
+            "OWNER": "CCC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1331,7 +1405,8 @@
             "icon": "foragers",
             "level": 1,
             "buff": "Gathering Speed +5%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1348,7 +1423,8 @@
             "icon": "foragers",
             "level": 1,
             "buff": "Gathering Speed +5%",
-            "OWNER": "KLK"
+            "OWNER": "KLK",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1365,7 +1441,8 @@
             "icon": "fortress",
             "level": 4,
             "buff": "Fortress",
-            "OWNER": "HOB"
+            "OWNER": "HOB",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1382,7 +1459,8 @@
             "icon": "fortress",
             "level": 4,
             "buff": "Fortress",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1399,7 +1477,8 @@
             "icon": "fortress",
             "level": 4,
             "buff": "Fortress",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1416,7 +1495,8 @@
             "icon": "fortress",
             "level": 4,
             "buff": "Fortress",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1433,7 +1513,8 @@
             "icon": "lodge",
             "level": 3,
             "buff": "March Speed +15%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1450,7 +1531,8 @@
             "icon": "lodge",
             "level": 3,
             "buff": "March Speed +15%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1467,7 +1549,8 @@
             "icon": "lodge",
             "level": 3,
             "buff": "March Speed +15%",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1484,7 +1567,8 @@
             "icon": "lodge",
             "level": 3,
             "buff": "March Speed +15%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1501,7 +1585,8 @@
             "icon": "harvest",
             "level": 1,
             "buff": "Resource Production Speed +5%",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1518,7 +1603,8 @@
             "icon": "harvest",
             "level": 1,
             "buff": "Resource Production Speed +5%",
-            "OWNER": "LMA"
+            "OWNER": "LMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1535,7 +1621,8 @@
             "icon": "harvest",
             "level": 1,
             "buff": "Resource Production Speed +5%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1552,7 +1639,8 @@
             "icon": "harvest",
             "level": 1,
             "buff": "Resource Production Speed +5%",
-            "OWNER": "BOP"
+            "OWNER": "BOP",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1569,7 +1657,8 @@
             "icon": "harvest",
             "level": 1,
             "buff": "Resource Production Speed +5%",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1586,7 +1675,8 @@
             "icon": "harvest",
             "level": 1,
             "buff": "Resource Production Speed +5%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1603,7 +1693,8 @@
             "icon": "harvest",
             "level": 1,
             "buff": "Resource Production Speed +5%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1620,7 +1711,8 @@
             "icon": "harvest",
             "level": 1,
             "buff": "Resource Production Speed +5%",
-            "OWNER": "CCC"
+            "OWNER": "CCC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1637,7 +1729,8 @@
             "icon": "castle",
             "level": 4,
             "buff": "King",
-            "OWNER": "KING"
+            "OWNER": "KING",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1654,7 +1747,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1671,7 +1765,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "REB"
+            "OWNER": "REB",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1688,7 +1783,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1705,7 +1801,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1722,7 +1819,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "LMA"
+            "OWNER": "LMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1739,7 +1837,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1756,7 +1855,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "HOB"
+            "OWNER": "HOB",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1773,7 +1873,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "KVK"
+            "OWNER": "KVK",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1790,7 +1891,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1807,7 +1909,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1824,7 +1927,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1841,7 +1945,8 @@
             "icon": "sanctuary",
             "level": 3,
             "buff": "Sanctuary",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1858,7 +1963,8 @@
             "icon": "drill",
             "level": 1,
             "buff": "Training Speed +5%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1875,7 +1981,8 @@
             "icon": "scholars",
             "level": 1,
             "buff": "Research Speed +5%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1892,7 +1999,8 @@
             "icon": "scholars",
             "level": 1,
             "buff": "Research Speed +5%",
-            "OWNER": "LMA"
+            "OWNER": "LMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1909,7 +2017,8 @@
             "icon": "scholars",
             "level": 1,
             "buff": "Research Speed +5%",
-            "OWNER": "FRA"
+            "OWNER": "FRA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1926,7 +2035,8 @@
             "icon": "scholars",
             "level": 1,
             "buff": "Research Speed +5%",
-            "OWNER": "TMA"
+            "OWNER": "TMA",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1943,7 +2053,8 @@
             "icon": "scholars",
             "level": 1,
             "buff": "Research Speed +5%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1960,7 +2071,8 @@
             "icon": "scholars",
             "level": 1,
             "buff": "Research Speed +5%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1977,7 +2089,8 @@
             "icon": "scholars",
             "level": 1,
             "buff": "Research Speed +5%",
-            "OWNER": "AGw"
+            "OWNER": "AGw",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -1994,7 +2107,8 @@
             "icon": "scholars",
             "level": 3,
             "buff": "Research Speed +8%",
-            "OWNER": "LGN"
+            "OWNER": "LGN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -2011,7 +2125,8 @@
             "icon": "scholars",
             "level": 3,
             "buff": "Research Speed +8%",
-            "OWNER": "CcC"
+            "OWNER": "CcC",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -2028,7 +2143,8 @@
             "icon": "scholars",
             "level": 3,
             "buff": "Research Speed +8%",
-            "OWNER": "LgN"
+            "OWNER": "LgN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -2045,7 +2161,8 @@
             "icon": "scholars",
             "level": 3,
             "buff": "Research Speed +8%",
-            "OWNER": "FKN"
+            "OWNER": "FKN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
@@ -2062,7 +2179,8 @@
             "icon": "scholars",
             "level": 1,
             "buff": "Research Speed +5%",
-            "OWNER": "LgN"
+            "OWNER": "LgN",
+            "touching": false
           },
           "geometry": {
             "type": "Point",
