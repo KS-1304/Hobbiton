@@ -283,9 +283,9 @@
     </button>
 
     <script>
-
-
-
+        const CONFIG = {
+            enableTouching: true
+        };
 
         // set default zoom level and center point
         var coords = [600, 600];
@@ -415,7 +415,7 @@
                     html: iconmap[feature.properties.icon],
                     iconSize: [42, 42],
                     iconAnchor: [21, 21],
-                    className: 'myDivIcon ' + feature.properties.OWNER + (feature.properties.touching ? ' touching-glow' : '')
+                    className: 'myDivIcon ' + feature.properties.OWNER + (CONFIG.enableTouching && feature.properties.touching ? ' touching-glow' : '')
                 })
             );
             // Update tooltip with new owner
@@ -441,10 +441,12 @@
         <label for="owner-input">Owner:</label>
         <input type="text" id="owner-input" value="${feature.properties.OWNER}" maxlength="10" autofocus>
         
+        ${CONFIG.enableTouching ? `
         <div style="margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
           <input type="checkbox" id="touching-input" ${feature.properties.touching ? 'checked' : ''} style="width: auto; margin-bottom: 0;">
           <label for="touching-input" style="margin-bottom: 0;">Touching</label>
         </div>
+        ` : ''}
 
         <div class="owner-modal-buttons">
           <button class="cancel-btn">Cancel</button>
@@ -476,7 +478,6 @@
                 var touchingInput = modal.querySelector('#touching-input');
 
                 var newOwner = ownerInput.value.trim();
-                var newTouching = touchingInput.checked;
 
                 var changed = false;
 
@@ -485,9 +486,12 @@
                     changed = true;
                 }
 
-                if (newTouching !== feature.properties.touching) {
-                    feature.properties.touching = newTouching;
-                    changed = true;
+                if (CONFIG.enableTouching && touchingInput) {
+                    var newTouching = touchingInput.checked;
+                    if (newTouching !== feature.properties.touching) {
+                        feature.properties.touching = newTouching;
+                        changed = true;
+                    }
                 }
 
                 if (changed) {
@@ -530,7 +534,7 @@
                         html: iconmap[feature.properties.icon],
                         iconSize: [42, 42],
                         iconAnchor: [21, 21],
-                        className: 'myDivIcon ' + feature.properties.OWNER + (feature.properties.touching ? ' touching-glow' : '')
+                        className: 'myDivIcon ' + feature.properties.OWNER + (CONFIG.enableTouching && feature.properties.touching ? ' touching-glow' : '')
                     })
                 );
                 layer.bindTooltip(feature.properties.Type + ' L' + feature.properties.level + '</br>X:' + feature.geometry.coordinates[0] + ' Y:' + feature.geometry.coordinates[1] + '</br>Buff: ' + feature.properties.buff + '<br />Held By:' + feature.properties.OWNER);
@@ -2261,10 +2265,21 @@
         };
 
         // method that we will use to update the control based on feature properties passed
-        info.update = function (props, coords) {
-            this._div.innerHTML = '<h4>Outpost Details</h4>' + (props ?
-                props.Type + ' L' + props.level + '</br>X' + coords.coordinates[0] + ',Y' + coords.coordinates[1] + '<br />Buff: ' + props.buff + '<br />Held By:' + props.OWNER
-                : 'Hover over an outpost');
+        info.update = function (props, coords, isTemp = false) {
+            let content = '<h4>Outpost Details</h4>';
+            if (props) {
+                content += props.Type + ' L' + props.level + '</br>X' + coords.coordinates[0] + ',Y' + coords.coordinates[1] + '<br />Buff: ' + props.buff + '<br />Held By:' + props.OWNER;
+            } else if (isTemp) {
+                content = '<h4>Temporary Location</h4>';
+                const x = coords[0];
+                const y = coords[1];
+                content += `Coord: X${x}, Y${y}<br><br>`;
+                content += `<button onclick="copyShareLink(${x}, ${y})" style="background: #4CAF50; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-size: 12px; margin-bottom: 5px; width: 100%;">Copy Share Link</button>`;
+                content += `<button onclick="clearTempMarker()" style="background: #f44336; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-size: 12px; width: 100%;">Clear Marker</button>`;
+            } else {
+                content += 'Hover over an outpost or click map to drop pin';
+            }
+            this._div.innerHTML = content;
         };
 
         info.addTo(map);
@@ -2303,6 +2318,75 @@
         }
 
         document.getElementById('export-btn').addEventListener('click', exportGeoJSON);
+
+        // TEMPORARY MARKER & SHARING LOGIC
+        var tempMarker;
+
+        function setTempMarker(x, y, updateUrl = true) {
+            if (tempMarker) {
+                map.removeLayer(tempMarker);
+            }
+
+            tempMarker = L.marker([y, x], {
+                icon: L.divIcon({
+                    html: '<span class="mdi mdi-36px mdi-map-marker" style="color: #4CAF50; text-shadow: 0 0 10px white;"></span>',
+                    iconSize: [36, 36],
+                    iconAnchor: [18, 36],
+                    className: 'temp-marker-icon'
+                })
+            }).addTo(map);
+
+            info.update(null, [x, y], true);
+
+            if (updateUrl) {
+                const url = new URL(window.location);
+                url.searchParams.set('tx', x);
+                url.searchParams.set('ty', y);
+                window.history.replaceState({}, '', url);
+            }
+        }
+
+        function clearTempMarker() {
+            if (tempMarker) {
+                map.removeLayer(tempMarker);
+                tempMarker = null;
+            }
+            const url = new URL(window.location);
+            url.searchParams.delete('tx');
+            url.searchParams.delete('ty');
+            window.history.replaceState({}, '', url);
+            info.update();
+        }
+
+        function copyShareLink(x, y) {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('Share link copied to clipboard!');
+            });
+        }
+
+        map.on('click', function (e) {
+            // Convert clicked latlng to integer coords (X, Y)
+            const x = Math.round(e.latlng.lng);
+            const y = Math.round(e.latlng.lat);
+
+            // Only set if within map bounds
+            if (x >= 0 && x <= 1200 && y >= 0 && y <= 1200) {
+                setTempMarker(x, y);
+            }
+        });
+
+        // Load from URL params on startup
+        window.addEventListener('load', function () {
+            const params = new URLSearchParams(window.location.search);
+            const tx = params.get('tx');
+            const ty = params.get('ty');
+            if (tx !== null && ty !== null) {
+                setTempMarker(parseInt(tx), parseInt(ty), false);
+                // Pan to the marker
+                map.panTo([parseInt(ty), parseInt(tx)]);
+            }
+        });
 
     </script>
 </body>
