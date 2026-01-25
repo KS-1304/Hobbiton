@@ -66,7 +66,7 @@ The prep phase is split into 5 days:
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Use Truegold** | 🟢 BEST | | | | 🟡 Optional |
 | **Use Speedups - Construction** | 🟢 BEST | 🟡 Optional | | | 🟡 Optional |
-| **Use Speedups - Research** | 🟡 Optional | 🟢 BEST | | | 🟢 BEST |
+| **Use Speedups - Research** | 🟡 Optional | 🟢 BEST | | | 🟡 Optional |
 | **Use Upgrade Gov Charm** | 🟢 BEST | | 🟡 Optional | 🟡 Optional | |
 | **Use Upgrade Gov Gear** | 🔴 DON'T | | | | 🟢 BEST |
 | **Finish Intel Mission** | 🟢 BEST | 🔴 DON'T | 🟢 BEST | 🔴 DON'T  | 🟢 BEST |
@@ -75,8 +75,8 @@ The prep phase is split into 5 days:
 | **Use Mithril** | | | | 🟡 Optional | 🟢 BEST |
 | **Use Forgehammer(s)** | | | | 🔴 DON'T | 🟢 BEST |
 | **Use Hero Widget** | | | | 🔴 DON'T | 🟢 BEST |
-| **Train Troops** | 🔴 DON'T | 🔴 DON'T | 🔵 START | 🟢 BEST | |
-| **Use Speedups (Training/Promote)** | 🔴 DON'T | 🔴 DON'T | | 🟢 BEST | |
+| **Train Troops** | 🔴 DON'T | 🔴 DON'T | 🔵 START | 🟢 BEST | 🟡 Optional |
+| **Use Speedups (Training/Promote)** | 🔴 DON'T | 🔴 DON'T | | 🟢 BEST | 🟡 Optional |
 | **Pet Advancement** | | | 🟢 BEST | | |
 | **Use Taming Mark** | | | 🟢 BEST | | 🟡 Optional |
 | **Gathering RSS** | 🔵 START | 🟢 BEST | 🔵 START | 🟢 BEST | 🟢 BEST |
