@@ -81,12 +81,12 @@ Players from both kingdoms can teleport to each other’s territory using Cross-
 
 You can attack players from the opposing kingdom.  You’ll earn points if their Town Center is within 3 levels of yours.
 
-This phase lasts for 12 hours, from 10:00 UTC to 22:00 UTC.
+This phase lasts for 12 hours, from <span class="utc-time">10:00 UTC</span> to <span class="utc-time">22:00 UTC</span>.
 
 The kingdom who did the best during the prep phase gets to attack the other kingdom's castle.
 
-10:00 UTC - Cross Kingdom Opens  
-12:00 UTC - Castle Battle
+<span class="utc-time">10:00 UTC</span> - Cross Kingdom Opens  
+<span class="utc-time">12:00 UTC</span> - Castle Battle
 
 If an alliance from the same kingdom that holds the King’s Castle also captures the turrets, each turret gives a Lethality Bonus to the squads from that kingdom. The more turrets they control, the bigger the bonus:
 
