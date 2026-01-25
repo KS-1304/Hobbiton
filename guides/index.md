@@ -12,18 +12,16 @@
 * [Swordland Showdown](./swordland)
 * [Mystic Trial](./mystic)
 * [Fishing](./fishing)
-
-## Missing Guides
-* Hero Roulette
-* Cesares Fury
-* Call of the Sovereign
-* Champagne Fair
-* Hall of Heroes
-* Mystic Divination
-* Desert Trial
-* All Out
-* Buccaneer Bounty
-* Forsaken Temple
+* [Hero Roulette](./roulette)
+* [Cesares Fury](./fury)
+* [Call of the Sovereign](./sovereign)
+* [Champagne Fair](./champagne)
+* [Hall of Heroes](./heroes)
+* [Mystic Divination](./divination)
+* [Desert Trial](./desert)
+* [All Out](./allout)
+* [Buccaneer Bounty](./buccaneer)
+* [Forsaken Temple](./temple)
 
  
 ## Events to Ignore
