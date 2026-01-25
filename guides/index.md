@@ -4,6 +4,7 @@
 * [Rally Basics](./rallybasics)
 * [Joining Bear Rallies](./bearjoin)
 * [Hosting Bear Rallies](./bearhost)
+* [Hall of Governors/Strongest Governor](./hog)
 * [Kingdom of Power (KvK)](./kvk)
 * [Viking Vengeance](./vikings)
 * [Merchant Empire](./merchant)
@@ -11,6 +12,34 @@
 * [Swordland Showdown](./swordland)
 * [Mystic Trial](./mystic)
 * [Fishing](./fishing)
+
+## Missing Guides
+* Hero Roulette
+* Cesares Fury
+* Call of the Sovereign
+* Champagne Fair
+* Hall of Heroes
+* Mystic Divination
+* Desert Trial
+* All Out
+* Buccaneer Bounty
+* Forsaken Temple
+
+ 
+## Events to Ignore
+The following events are generally not worth spending additional resources or speedups on, but you can often still get the Target rewards by just playing the game normally:
+* Plan your City
+* Power Up
+* Develop New Tech
+* City Development
+* Working Overtime
+* Grow your heros
+* War Preparations
+* Steel Edge
+* Call of the Sovereign
+* Armament Competition
+* Stand of Arms Event
+* Officer Project
 
 
 ## External Guides
