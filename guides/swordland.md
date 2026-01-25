@@ -104,6 +104,13 @@ In the last 10 minutes of the game, focus on the Swordshrine using coordinated r
 
 Don't forget to activate any buffs, or pet skills before starting the event.
 
+### Reward Maximization (Trading)
+If you find yourself in a match with a friendly alliance of similar strength, you can "trade" buildings back and forth. This generates more loot crates for everyone and allows players to farm Personal Relic Points more efficiently.
+
+### Guerilla Tactics (Losing Matchups)
+If you clearly can't win the fight, you can still focus on your personal score.  Try to find isolated or weaker enemies, and cause damage, or scout for weaker or undefended buildings.  Capturing a building will spawn things you can collect for points, even if you can't hold the building very long.
+
+
 ## Tips and Mechanics
 
 You get free heals and teleports as part of the event.  These are on cooldowns.  Beyond these, and you start eating into your own stock.

@@ -6,6 +6,8 @@ The goal of the event is to rack up points by defending towns.
 
 You get more points defending other towns than your own.
 
+NOTE: Shields do not work during the Viking Vengeance event.
+
 ## Viking Waves
 
 Wave 1–6: All Members  
@@ -45,7 +47,7 @@ From the 'members' screen you can see who is under reinforced, and redirect troo
 
 We ask that players don't Heal during the event.  If you do this, the troops are automatically added to your garrison and will steal points from players defending you.
 
-If your town does fall to attack, don't worry, you still get points for defending others.  Don't put out the burn until after the event.
+If your town does fall to attack, don't worry, you still get points for defending others.  **Do NOT extinguish the fire** until after the event. It wastes resources and offers no strategic benefit. You can still reinforce others while your city is burning.
 
 ## HQ Attacks
 
