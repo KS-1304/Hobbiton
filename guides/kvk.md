@@ -40,7 +40,7 @@ The prep phase is split into 5 days:
 * **Skip Last Intel missions before reset**
 
 ### Day 5 - Power Boost
-* Use Rearch speedups
+* Use Research speedups
 * Upgrade Gov Gear
 * Use Mithril
 * Use Forgehammers
@@ -83,7 +83,7 @@ You can attack players from the opposing kingdom.  You’ll earn points if their
 
 This phase lasts for 12 hours, from 10:00 UTC to 22:00 UTC.
 
-The kingdom who did the best during the prep phase get's to attack the other kingdom's castle.
+The kingdom who did the best during the prep phase gets to attack the other kingdom's castle.
 
 10:00 UTC - Cross Kingdom Opens  
 12:00 UTC - Castle Battle
@@ -97,8 +97,8 @@ If an alliance from the same kingdom that holds the King’s Castle also capture
 
 ## Triage Phase
 
-Troops that were completly lost (Lost in battle, that didn't go to your Infirmary or Enlistment Office) can be rescued.
+Troops that were completely lost (Lost in battle, that didn't go to your Infirmary or Enlistment Office) can be rescued.
 
-Between Medical Satchels (bought using 550 gems), and Rescue Orders (gifted from alliance members) you can rescue rate up to 90% of your lost troops.
+Between Medical Satchels (bought using 550 gems), and Rescue Orders (gifted from alliance members) you can rescue up to 90% of your lost troops.
 
-Each member of the alliance gets 20 rescue orders to give to other members.  Each order helps rescue 1% of the reciving players lost troops.
+Each member of the alliance gets 20 rescue orders to give to other members.  Each order helps rescue 1% of the receiving players lost troops.

@@ -6,21 +6,21 @@ The event is split into phases.
 
 Swordland happens at set times during the day.  You need to be online to take part.  During registration you should vote for a time you're available.  The 2 most popular times will be allocated as Legion 1 and Legion 2.
 
-After the times have been decided, you need to join one of the Legion.
+After the times have been decided, you need to join one of the Legions.
 
 At this time the R4 and R5 need to assign players to slots.  A max of 30 players can take part, with 10 reserve members.
 
-You should confirm your registration for one of the Legion
+You should confirm your registration for one of the Legions
 
 ## Matchmaking
 
-After the legions are set up, the alliance will be matched against another, based on stats likes troop strength, and previous history.
+After the legions are set up, the alliance will be matched against another, based on stats like troop strength, and previous history.
 
 ## Pre-Battle
 
 Before the scheduled battle, you must withdraw all your troops, and make sure your infirmary is empty.
 
-Once all your troops are home and healthy, you will be able join the battlefield.  During the event your town cannot be attacked by normal players, it will look like you have a bubble activated.
+Once all your troops are home and healthy, you will be able to join the battlefield.  During the event your town cannot be attacked by normal players, it will look like you have a bubble activated.
 
 ## Battle
 
@@ -28,7 +28,7 @@ Phase 1: Fight for basic buildings like Sanctums, Abbeys, Bell Tower, and the Ro
 
 Phase 2: Stronger buildings like the Swordshrine, Hall of Reformation, and Mercenary Camp become available.
 
-Phase 3: Undercellers appear randomly.
+Phase 3: Undercellars appear randomly.
 
 ## Buildings
 
@@ -83,16 +83,16 @@ Lets you send mercenaries to hit enemy buildings.
 | **Alliance Points** | 1,200 | +240/min |
 | **Personal Points** | 600 | +120/min |
 
-### Undercellers
+### Undercellars
 Appear in waves—loot them for big point boosts.
 
-## Stratergy
+## Strategy
 
 Players must be online during the event to take part.  Players who register but don't turn up, will affect matchmaking (result in stronger enemies).
 
-Use Squad chat during the event to coordiate attacks/defence.
+Use Squad chat during the event to coordinate attacks/defense.
 
-R4/R5 ca use lables or markers to direct players to targets.
+R4/R5 can use labels or markers to direct players to targets.
 
 At the beginning of the match, the strongest buildings are the Belltower and Royal Stables, so picking these first is useful.
 
@@ -102,7 +102,7 @@ Attacking players will need to take turns to allow troops to heal.
 
 In the last 10 minutes of the game, focus on the Swordshrine using coordinated rallies.
 
-Don't forget to activate any Buffs, or pet skills before starting the event.
+Don't forget to activate any buffs, or pet skills before starting the event.
 
 ## Tips and Mechanics
 
@@ -110,6 +110,6 @@ You get free heals and teleports as part of the event.  These are on cooldowns. 
 
 It also doubles in cost to use paid teleports, so using 3 paid teleports within 5 mins might end up using 7 advanced teleporters.
 
-If you end up wiping out all your toops early, you can click 'Leave Battlefield'.  After 12 minutes your troops will be healed and you can rejoin.
+If you end up wiping out all your troops early, you can click 'Leave Battlefield'.  After 12 minutes your troops will be healed and you can rejoin.
 
-Attacking the enemies towns will cause the player to teleport away, this will cause them to leaveg the buildings they are garrisoned in.
+Attacking the enemies' towns will cause the player to teleport away, this will cause them to leave the buildings they are garrisoned in.

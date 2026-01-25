@@ -1,23 +1,23 @@
 # Joining a Bear Hunt Trap Rally
 
-To cooperate with your alliance and to get a high score when joining a Bear Rallies, you need to:
+To cooperate with your alliance and to get a high score when joining Bear Rallies, you need to:
 * Have the correct leading hero
 * Have the right amount of troops
 * Join multiple rallies
 
-## Join Heros
+## Join Heroes
 
 When joining a rally, only the first hero in the list is important.
 
 The other hero slots can be filled with any hero, or left empty.
 
-There are 4 main hero's to use when joining a rally:
+There are 4 main heroes to use when joining a rally:
 * Chenko
 * Yeonwoo
 * Amane
 * Amadeus
 
-Ideally you should make sure that the top right skill on these heros is as high as you can make it.
+Ideally you should make sure that the top right skill on these heroes is as high as you can make it.
 
 ## Rally Size
 
@@ -32,7 +32,7 @@ or
 or  
 20% Infantry / 20% Cavalry / 60% Archers  
 
-So to send out 3 full rallies with the optimal ratios you would need at least 144k archers.  If you don't have this amount, don't worry, just use whatever troops you have.  It's better to send full squad's of 80k with the wrong ratio, than to leave troops at home.
+So to send out 3 full rallies with the optimal ratios you would need at least 144k archers.  If you don't have this amount, don't worry, just use whatever troops you have.  It's better to send full squads of 80k with the wrong ratio, than to leave troops at home.
 
 ## Rally Hosting
 

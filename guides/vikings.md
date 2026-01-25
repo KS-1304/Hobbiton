@@ -1,6 +1,6 @@
 # Viking Vengeance Event
 
-Viking Vengeance happens every two weeks, on Tuesday and Thursday. Players defend their alliance against up to 20 waves Vikings.
+Viking Vengeance happens every two weeks, on Tuesday and Thursday. Players defend their alliance against up to 20 waves of Vikings.
 
 The goal of the event is to rack up points by defending towns.
 
@@ -21,17 +21,17 @@ Wave 20: HQ
 
 ## Strategy
 
-To get the highest score you must remain online for the entirety of the event.  If you are offline, you and anyone defending your town will loose out on 3 waves of attacks.
+To get the highest score you must remain online for the entirety of the event.  If you are offline, you and anyone defending your town will lose out on 3 waves of attacks.
 
 To get the highest points, you should send out all of your troops to towns near to yours, ideally towns that players will be online during the event.
 
-If you leave troops at home, they’ll fight the Vikings and steal kills from the players reinforcing you. That lowers their points.  If someone notices you have troops at home, they will likely remove their reenforcements to reenforce another player who follows the rules.
+If you leave troops at home, they’ll fight the Vikings and steal kills from the players reinforcing you. That lowers their points.  If someone notices you have troops at home, they will likely remove their reinforcements to reinforce another player who follows the rules.
 
 If you have more troops than you have capacity to send, you can leave Archers at home.  This will have an impact on the scoring, but it is better than leaving Infantry and Cavalry.
 
-Use Bear Hunt joiner heros when reenforcing other towns.
+Use Bear Hunt joiner heroes when reinforcing other towns.
 
-Make sure you leave your best defence hero's at home, and have your Guard Station configured.
+Make sure you leave your best defense heroes at home, and have your Guard Station configured.
 
 ## During the event
 
@@ -39,9 +39,9 @@ During the event, there will be an icon in the bottom right of the screen.
 
 Here you will be able to see what wave the attack is on, battle reports of towns you are defending, and the 'members' screen, will show you the status of your allies.
 
-During the early waves of attacks, you should check the reports of people who you are reenforcing, if you see a large number of kills by the owner of the town, it is best to move your forces to someone who has properly vacated their town.
+During the early waves of attacks, you should check the reports of people who you are reinforcing, if you see a large number of kills by the owner of the town, it is best to move your forces to someone who has properly vacated their town.
 
-From the 'members' screen you can see who is under reenforced, and redirect troops there to help out.  Be sure to always keep your town empty when a wave hits.
+From the 'members' screen you can see who is under reinforced, and redirect troops there to help out.  Be sure to always keep your town empty when a wave hits.
 
 We ask that players don't Heal during the event.  If you do this, the troops are automatically added to your garrison and will steal points from players defending you.
 
