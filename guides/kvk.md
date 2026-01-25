@@ -18,8 +18,8 @@ The prep phase is split into 5 days:
 * Upgrade Governor Gear Charm
 * Intel Missions
 * _Optional: Use Research Speedups_
-* ~~ Use Training Speedups ~~
-* ~~ Upgrade Governor Gear ~~
+* ~~Use Training Speedups~~
+* ~~Upgrade Governor Gear~~
 
 ### Day 2 - Basic Up
 * Use Research Speedups
@@ -45,8 +45,8 @@ The prep phase is split into 5 days:
 * **Skip Last Intel Missions Before Reset**
 * _Optional: Governor Gear Charm_
 * _Optional: Use Mirthril_
-* ~~ Use Forgehammers ~~
-* ~~ Use Widgets ~~
+* ~~Use Forgehammers~~
+* ~~Use Widgets~~
 
 ### Day 5 - Power Boost
 * Use Research Speedups
