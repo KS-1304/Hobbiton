@@ -36,6 +36,7 @@ Phase 3: Undercellars appear randomly.
 
 ### Swordshrine (Center)
 The center of Swordland Showdown Map.
+
 |  | First Control | Occupation |
 | :--- | :---: | :---: |
 | **Alliance Points** | 9,000 | +1,800/min |
@@ -43,6 +44,7 @@ The center of Swordland Showdown Map.
 
 ### Sanctums
 Near the Swordshrine. Control both for even more points.
+
 |  | First Control | Occupation |
 | :--- | :---: | :---: |
 | **Alliance Points** | 6,000 | +1,200/min |
@@ -50,6 +52,7 @@ Near the Swordshrine. Control both for even more points.
 
 ### Abbeys
 Give points over time.
+
 |  | First Control | Occupation |
 | :--- | :---: | :---: |
 | **Alliance Points** | 3,000 | +600/min |
@@ -57,6 +60,7 @@ Give points over time.
 
 ### Hall of Reformation
 Boosts your combat power.
+
 |  | First Control | Occupation |
 | :--- | :---: | :---: |
 | **Alliance Points** | 1,200 | +240/min |
@@ -64,6 +68,7 @@ Boosts your combat power.
 
 ### Belltower
 Speeds up building captures.
+
 |  | First Control | Occupation |
 | :--- | :---: | :---: |
 | **Alliance Points** | 1,200 | +240/min |
@@ -71,6 +76,7 @@ Speeds up building captures.
 
 ### Royal Stables
 Shortens teleport cooldown by 50%.
+
 |  | First Control | Occupation |
 | :--- | :---: | :---: |
 | **Alliance Points** | 1,200 | +240/min |
@@ -78,6 +84,7 @@ Shortens teleport cooldown by 50%.
 
 ### Mercenary Camp
 Lets you send mercenaries to hit enemy buildings.
+
 |  | First Control | Occupation |
 | :--- | :---: | :---: |
 | **Alliance Points** | 1,200 | +240/min |
