@@ -13,35 +13,44 @@ If there isn't a match, we get a small reward, and the event ends.
 The prep phase is split into 5 days:
 
 ### Day 1 - City Up
-* Use Truegold
-* Use construction speedups
-* Upgrade Gov Charms
+* Use Truegold to upgrade a building
+* Use Construction Speedups
+* Upgrade Governor Gear Charm
 * Intel Missions
+* _Optional: Use Research Speedups_
+* ~~ Use Training Speedups ~~
+* ~~ Upgrade Governor Gear ~~
 
 ### Day 2 - Basic Up
-* Use research speedups
-* Spin hero Roulette
+* Use Research Speedups
+* Spin Hero Roulette
 * Use Hero Shards
 * Gather Resources
-* **Skip Last Intel missions before reset**
+* **Skip Last Intel Missions Before Reset**
+* _Optional: Use Truegold to upgrade a building_
+* _Optional: Use Construction Speedups_
 
 ### Day 3 - Pets
 * Raise Pet Advancement
 * Use Common and Advanced Training Marks
 * Intel Missions
-* _Optional: Upgrade Gov Charms_
+* _Optional: Governor Gear Charm_
+* _Optional: Spin Hero Roulette_
+* _Optional: Use Hero Shards_
 
 ### Day 4 - Troops
 * Promote and Train Troops
-* Use Training speedups
+* Use Training Speedups
 * Gather Resources
-* _Optional: Upgrade Gov Charms_
+* **Skip Last Intel Missions Before Reset**
+* _Optional: Governor Gear Charm_
 * _Optional: Use Mirthril_
-* **Skip Last Intel missions before reset**
+* ~~ Use Forgehammers ~~
+* ~~ Use Widgets ~~
 
 ### Day 5 - Power Boost
-* Use Research speedups
-* Upgrade Gov Gear
+* Use Research Speedups
+* Upgrade Governor Gear
 * Use Mithril
 * Use Forgehammers
 * Use Widgets
@@ -54,7 +63,7 @@ The prep phase is split into 5 days:
 | TASK | Day-1 | Day-2 | Day-3 | Day-4 | Day-5 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Use Truegold** | 🟢 BEST | | | | 🟡 Optional |
-| **Use Speedups - Construction** | 🟢 BEST | | | | 🟡 Optional |
+| **Use Speedups - Construction** | 🟢 BEST | 🟡 Optional | | | 🟡 Optional |
 | **Use Speedups - Research** | 🟡 Optional | 🟢 BEST | | | 🟢 BEST |
 | **Use Upgrade Gov Charm** | 🟢 BEST | | 🟡 Optional | 🟡 Optional | |
 | **Use Upgrade Gov Gear** | 🔴 DON'T | | | | 🟢 BEST |
