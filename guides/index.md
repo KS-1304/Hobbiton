@@ -34,7 +34,6 @@ The following events are generally not worth spending additional resources or sp
 * Grow your heros
 * War Preparations
 * Steel Edge
-* Call of the Sovereign
 * Armament Competition
 * Stand of Arms Event
 * Officer Project
