@@ -34,6 +34,7 @@ The prep phase is split into 5 days:
 * Raise Pet Advancement
 * Use Common and Advanced Training Marks
 * Intel Missions
+* Start Troop Training that will **finish on Day 4**
 * _Optional: Governor Gear Charm_
 * _Optional: Spin Hero Roulette_
 * _Optional: Use Hero Shards_
@@ -55,6 +56,7 @@ The prep phase is split into 5 days:
 * Use Forgehammers
 * Use Widgets
 * Intel Missions
+* Gather Resources
 * Use Speedups (if you have any left)
 * Use Truegold (if you have any left)
 
@@ -73,16 +75,18 @@ The prep phase is split into 5 days:
 | **Use Mithril** | | | | 🟡 Optional | 🟢 BEST |
 | **Use Forgehammer(s)** | | | | 🔴 DON'T | 🟢 BEST |
 | **Use Hero Widget** | | | | 🔴 DON'T | 🟢 BEST |
+| **Train Troops** | 🔴 DON'T | 🔴 DON'T | 🔵 START | 🟢 BEST | |
 | **Use Speedups (Training/Promote)** | 🔴 DON'T | 🔴 DON'T | | 🟢 BEST | |
 | **Pet Advancement** | | | 🟢 BEST | | |
 | **Use Taming Mark** | | | 🟢 BEST | | 🟡 Optional |
-| **Gathering RSS** | | 🟢 BEST | | 🟢 BEST | |
+| **Gathering RSS** | 🔵 START | 🟢 BEST | 🔵 START | 🟢 BEST | 🟢 BEST |
 
 
-> **Legend:**
-> 🟢 **BEST:** Optimal time to perform task
-> 🟡 **Optional:** Secondary option
-> 🔴 **DON'T:** Avoid performing task
+> **Legend:**  
+> 🟢 **BEST:** Optimal time to perform task.  
+> 🔵 **START:** Start this task the day before, so it completes on the BEST day.  
+> 🟡 **Optional:** If you need to boost this day, and have spare resources.  
+> 🔴 **DON'T:** Avoid performing task.  
 
 ## Battle Day
 
@@ -111,3 +115,4 @@ Troops that were completely lost (Lost in battle, that didn't go to your Infirma
 Between Medical Satchels (bought using 550 gems), and Rescue Orders (gifted from alliance members) you can rescue up to 90% of your lost troops.
 
 Each member of the alliance gets 20 rescue orders to give to other members.  Each order helps rescue 1% of the receiving players lost troops.
+
