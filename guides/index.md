@@ -1,6 +1,4 @@
-[Return Home](../)
-
-## Our Guides
+# Event Guides
 * [Rally Basics](./rallybasics)
 * [Joining Bear Rallies](./bearjoin)
 * [Hosting Bear Rallies](./bearhost)
@@ -54,3 +52,4 @@ The following events are generally not worth spending additional resources or sp
 * [Hero Gear Optimizer](https://kingshotoptimizer.com/hero-gear)
 * [KingShot Pack Value
 Calculator](https://kingshotpacks.com/packs)
+* [Calculators and Tools](https://kingshot.net/)
