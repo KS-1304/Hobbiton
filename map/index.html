@@ -237,29 +237,6 @@
         .owner-modal-buttons .save-btn:hover {
             background: #45a049;
         }
-
-        #export-btn {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            z-index: 1000;
-            background: #2196F3;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        #export-btn:hover {
-            background: #1976D2;
-        }
     </style>
 
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
@@ -278,9 +255,6 @@
 
 <body>
     <div id="map"></div>
-    <button id="export-btn">
-        <span class="mdi mdi-download"></span> Export GeoJSON
-    </button>
 
     <script>
         const CONFIG = {
@@ -2203,6 +2177,72 @@
             onEachFeature: onEachFeature
         }).addTo(map);
 
+
+        // Custom Leaflet Controls for Home and Export
+        L.Control.Navigation = L.Control.extend({
+            onAdd: function (map) {
+                var container = L.DomUtil.create('div', 'leaflet-control');
+                container.style.display = 'flex';
+                container.style.flexDirection = 'column';
+                container.style.gap = '4px';
+                container.style.border = 'none';
+                container.style.background = 'transparent';
+                container.style.width = 'auto';
+
+                // Home Button
+                var homeBtn = L.DomUtil.create('a', '', container);
+                homeBtn.href = '../';
+                homeBtn.title = 'Home';
+                homeBtn.innerHTML = '<span class="mdi mdi-home"></span> Return Home';
+                homeBtn.style.padding = '0 8px';
+                homeBtn.style.height = '30px';
+                homeBtn.style.lineHeight = '30px';
+                homeBtn.style.display = 'flex';
+                homeBtn.style.alignItems = 'center';
+                homeBtn.style.gap = '6px';
+                homeBtn.style.background = 'white';
+                homeBtn.style.color = 'black';
+                homeBtn.style.textDecoration = 'none';
+                homeBtn.style.border = '1px solid #ccc';
+                homeBtn.style.borderRadius = '4px';
+                homeBtn.style.fontFamily = 'Arial, sans-serif';
+                homeBtn.style.fontSize = '12px';
+                homeBtn.style.fontWeight = 'bold';
+                homeBtn.style.whiteSpace = 'nowrap';
+
+                // Export Button
+                var exportBtn = L.DomUtil.create('a', '', container);
+                exportBtn.href = '#';
+                exportBtn.title = 'Export GeoJSON';
+                exportBtn.innerHTML = '<span class="mdi mdi-download"></span> Export GeoJSON';
+                exportBtn.style.padding = '0 8px';
+                exportBtn.style.height = '30px';
+                exportBtn.style.lineHeight = '30px';
+                exportBtn.style.display = 'flex';
+                exportBtn.style.alignItems = 'center';
+                exportBtn.style.gap = '6px';
+                exportBtn.style.background = 'white';
+                exportBtn.style.color = 'black';
+                exportBtn.style.textDecoration = 'none';
+                exportBtn.style.border = '1px solid #ccc';
+                exportBtn.style.borderRadius = '4px';
+                exportBtn.style.fontFamily = 'Arial, sans-serif';
+                exportBtn.style.fontSize = '12px';
+                exportBtn.style.fontWeight = 'bold';
+                exportBtn.style.whiteSpace = 'nowrap';
+
+                L.DomEvent.on(exportBtn, 'click', function (e) {
+                    L.DomEvent.stopPropagation(e);
+                    L.DomEvent.preventDefault(e);
+                    exportGeoJSON();
+                });
+
+                return container;
+            }
+        });
+
+        map.addControl(new L.Control.Navigation({ position: 'topleft' }));
+
         // Create legend + Layer Control
         var overLayers = [
 
@@ -2254,6 +2294,8 @@
             }
         ];
         map.addControl(new L.Control.PanelLayers(baseMaps, overLayers, { position: 'topleft', collapsibleGroups: true }));
+
+
 
         // Create Info Pane.
         var info = L.control();
@@ -2316,8 +2358,6 @@
             linkElement.setAttribute('download', exportFileDefaultName);
             linkElement.click();
         }
-
-        document.getElementById('export-btn').addEventListener('click', exportGeoJSON);
 
         // TEMPORARY MARKER & SHARING LOGIC
         var tempMarker;
