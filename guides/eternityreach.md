@@ -25,8 +25,8 @@ Don't forget to activate your gathering skill, when sending troops out to gather
 
 If you're in an area with a lot of people around you, teleport somewhere more quiet.
 
-## Videos
+## Video Guides
 
-https://www.youtube.com/watch?v=fmFbpru_kwI+
+* [Ignore Kingshot’s Instructions to Dominate Eternity’s Reach](https://www.youtube.com/watch?v=fmFbpru_kwI)
 
-https://www.youtube.com/watch?v=6MzIbbLp8kM
+* [The Stealth Update Costing You 30K points in Eternity's Reach](https://www.youtube.com/watch?v=6MzIbbLp8kM)
