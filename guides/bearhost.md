@@ -2,7 +2,7 @@
 
 To host a rally for your alliance you should have the following:
 
-* Be in the top 10 most powerful players online
+* Be in the top 15 most powerful players online
 * Be located within a few squares of the bear trap
 
 Unlike when joining, you don't need specific heroes to host a rally, but you should send your strongest, ideally ones with attack based skills, not defensive.
