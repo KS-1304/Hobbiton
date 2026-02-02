@@ -31,7 +31,7 @@ If you leave troops at home, they’ll fight the Vikings and steal kills from th
 
 If you have more troops than you have capacity to send, you can leave Archers at home.  This will have an impact on the scoring, but it is better than leaving Infantry and Cavalry.
 
-Use Bear Hunt joiner heroes when reinforcing other towns.
+Use [Bear Hunt joiner heroes](./bearjoin) when reinforcing other towns.
 
 Make sure you leave your best defense heroes at home, and have your Guard Station configured.
 

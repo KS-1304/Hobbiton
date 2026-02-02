@@ -1,6 +1,6 @@
 # Hero Roulette
 
-The Hero Roulette is a 3-day event that typically starts on the second day of major milestones like Strongest Governor. It is your primary source for high-generation Mythic hero shards.
+The Hero Roulette is a 3-day event that typically starts on the second day of major milestones like [Strongest Governor (HOG)](./hog). It is your primary source for high-generation Mythic hero shards.
 
 ## How it Works
 *   **Lucky Chips**: Each spin costs 1 Lucky Chip or 1,500 gems.

@@ -1,6 +1,6 @@
 # All Out (Kill Event)
 
-The All Out event, also known as the Kill Event (KE), is a 2 day event where you earn points by defeating enemy troops.
+The All Out event, also known as the Kill Event (KE), is a 2 day event where you earn points by defeating enemy troops. It often coincides with the final phases of [Strongest Governor (HOG)](./hog).
 
 ## Scoring System
 Points are awarded based on the level of the troops you defeat:
