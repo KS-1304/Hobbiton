@@ -13,14 +13,14 @@ Typically, by the time Alliance Brawl is added to the game, your priority should
 
 | TASK | Prep | Day-1 | Day-2 | Day-3 | Day-4 | Day-5 | Day-6 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Truck Raids / Escort** | | 🟢 BEST | 🟢 BEST | 🟢 BEST | 🟢 BEST | 🟢 BEST | 🟢 BEST |
+| **Caravan Raids / Escort** | | 🟢 BEST | 🟢 BEST | 🟢 BEST | 🟢 BEST | 🟢 BEST | 🟢 BEST |
 | **Gathering RSS** | 🔵 START | 🟢 BEST | 🔵 START | 🟢 BEST | | | |
 | **Finish Intel Mission** | | 🔴 DON'T | 🟢 BEST | 🔴 DON'T | 🟢 BEST | | |
 | **Hunting Beasts / Terrors** | | | | | | 🟢 BEST | 🟢 BEST |
 | **Hero Shards** | | | 🟡 Optional | | | | |
 | **Speedups** | | | | | | | 🟡 Optional |
-| **Forgehammers/Mithril** | | | | | | | 🟡 Optional |
-| **Governor Gear/Charms** | | | | | | | 🟡 Optional |
+| **Forgehammers / Mithril** | | | | | | | 🟡 Optional |
+| **Governor Gear / Charms** | | | | | | | 🟡 Optional |
 | **Taming Marks** | | | | | | | 🟡 Optional |
 
 
@@ -33,7 +33,7 @@ Typically, by the time Alliance Brawl is added to the game, your priority should
 ## Strategy
 
 The best way to play Brawl is to maximize your "free" points:
-* **[Merchant Empire](./merchant)**: Truck raids, and Escort missions get you plenty of points every day. Raiding our competitor will help rob them of points.
+* **[Merchant Empire](./merchant)**: Caravan raids, and Escort missions get you plenty of points every day. Raiding our competitor will help rob them of points.
 * **Intel Missions**: Saving missions for **Day 2** and **Day 4** scoring days.
 * **Gathering Resources**: **Day 1** and **Day 3** give points for gathering resources.
 * **Hunting Beasts**: **Day 5** and **Day 6** give points for defeating beasts and calling rallies on terrors.
