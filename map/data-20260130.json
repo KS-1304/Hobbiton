@@ -369,7 +369,7 @@
                 "icon": "arsenal",
                 "level": 4,
                 "buff": "Troop ATT +8%",
-                "OWNER": "LGN",
+                "OWNER": "TMA",
                 "touching": false
             },
             "geometry": {
@@ -1143,7 +1143,7 @@
                 "icon": "harvest",
                 "level": 1,
                 "buff": "Resource Production Speed +5%",
-                "OWNER": "RSE",
+                "OWNER": "FKN",
                 "touching": false
             },
             "geometry": {
@@ -1323,7 +1323,7 @@
                 "icon": "sanctuary",
                 "level": 3,
                 "buff": "Sanctuary",
-                "OWNER": "FKN",
+                "OWNER": "KVK",
                 "touching": false
             },
             "geometry": {
@@ -1395,7 +1395,7 @@
                 "icon": "sanctuary",
                 "level": 3,
                 "buff": "Sanctuary",
-                "OWNER": "CcC",
+                "OWNER": "FKN",
                 "touching": false
             },
             "geometry": {
@@ -1485,7 +1485,7 @@
                 "icon": "scholars",
                 "level": 1,
                 "buff": "Research Speed +5%",
-                "OWNER": "TMA",
+                "OWNER": "HOB",
                 "touching": true
             },
             "geometry": {
@@ -1575,7 +1575,7 @@
                 "icon": "scholars",
                 "level": 3,
                 "buff": "Research Speed +8%",
-                "OWNER": "CcC",
+                "OWNER": "FRA",
                 "touching": true
             },
             "geometry": {
