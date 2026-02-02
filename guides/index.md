@@ -4,6 +4,7 @@
 * [Hosting Bear Rallies](./bearhost)
 * [Hall of Governors/Strongest Governor](./hog)
 * [Kingdom of Power (KvK)](./kvk)
+* [Alliance Brawl](./brawl)
 * [Viking Vengeance](./vikings)
 * [Merchant Empire](./merchant)
 * [Eternity's Reach](./eternityreach)
