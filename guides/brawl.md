@@ -17,11 +17,17 @@ Typically, by the time Alliance Brawl is added to the game, your priority should
 | **Gathering RSS** | 🔵 START | 🟢 BEST | 🔵 START | 🟢 BEST | | | |
 | **Finish Intel Mission** | | 🔴 DON'T | 🟢 BEST | 🔴 DON'T | 🟢 BEST | | |
 | **Hunting Beasts / Terrors** | | | | | | 🟢 BEST | 🟢 BEST |
+| **Hero Shards** | | | 🟡 Optional | | | | |
+| **Speedups** | | | | | | | 🟡 Optional |
+| **Forgehammers/Mithril** | | | | | | | 🟡 Optional |
+| **Governor Gear/Charms** | | | | | | | 🟡 Optional |
+| **Taming Marks** | | | | | | | 🟡 Optional |
 
 
 > **Legend:**  
 > 🟢 **BEST:** Optimal time to perform task.  
 > 🔵 **START:** Start this task the day before, so it completes on the BEST day.  
+> 🟡 **Optional:** If you need to boost your score, but remember to save for [KvK](./kvk).  
 > 🔴 **DON'T:** Avoid performing task (save for the correct day).
 
 ## Strategy
@@ -31,3 +37,5 @@ The best way to play Brawl is to maximize your "free" points:
 * **Intel Missions**: Saving missions for **Day 2** and **Day 4** scoring days.
 * **Gathering Resources**: **Day 1** and **Day 3** give points for gathering resources.
 * **Hunting Beasts**: **Day 5** and **Day 6** give points for defeating beasts and calling rallies on terrors.
+* **Other events**: If Armament Competition is also running, you might want to align goals, and use Hero shards on Day 2 of Brawl, and get points for both events.
+* **Last day**: If you are close to a milestone, it might be worth using speedups or other resources to get the extra points.  Save these to the last day, and only use if needed.
