@@ -7,7 +7,7 @@ Typically, by the time Alliance Brawl is added to the game, your priority should
 ## Preparation
 * **Day Before**: Before reset, you can send out troops out gathering, to arrive after reset for a quick score boost.
 * **Pet Skills**: The Bison's pet skill "Grip of the Titan", can be triggered, but not used.  This will cause the cooldown to start (even if it doesn't show it), this should allow you an additional activation, if timed correctly. Trigger this after sending out your gatherers.
-* **Intel Missions**: You get points for handing in Intel Missions, so you can complete missions the day before, and wait to hand them in until after reset on the scoring days (Day 2 & 4), for extra points.
+* **Intel Missions**: You get points for handing in Intel Missions, but intel missions accumulate across 'refreshes'.  If you skip doing the intel missions before reset, you can complete an extra set at the beginning of scoring days (Day 2 & 4), for extra points.  You get the points at 'complete', not 'claim', so there is no there is no benefit to waiting to press 'claim all', in this event.
 
 ## Summary
 
@@ -39,3 +39,7 @@ The best way to play Brawl is to maximize your "free" points:
 * **Hunting Beasts**: **Day 5** and **Day 6** give points for defeating beasts and calling rallies on terrors.
 * **Other events**: If Armament Competition is also running, you might want to align goals, and use Hero shards on Day 2 of Brawl, and get points for both events.
 * **Last day**: If you are close to a milestone, it might be worth using speedups or other resources to get the extra points.  Save these to the last day, and only use if needed.
+
+## Spenders
+
+This event rewards players for spending Gems and earning Top-up points. For those who plan to stock up on weekly cards, speed-ups, or consumables, a smart strategy is to purchase them now to earn additional points. This is a great way to gain extra rewards without depleting resources you might need for future events.
