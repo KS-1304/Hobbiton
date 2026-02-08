@@ -42,5 +42,4 @@ The best way to play Brawl is to maximize your "free" points:
 
 ## Spenders
 
-This event rewards players for using Gems and obtaining Top-up points.  For people who know they are going to want to stock up on weekly cards, speed ups or consumables, one stratergy is to buy those now, when you will get additonal points when doing so.
-This is a way to getting additional points, that won't rob you of resources you may want to use in future events.
+This event rewards players for spending Gems and earning Top-up points. For those who plan to stock up on weekly cards, speed-ups, or consumables, a smart strategy is to purchase them now to earn additional points. This is a great way to gain extra rewards without depleting resources you might need for future events.
