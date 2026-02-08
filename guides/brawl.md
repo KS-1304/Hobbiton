@@ -39,3 +39,8 @@ The best way to play Brawl is to maximize your "free" points:
 * **Hunting Beasts**: **Day 5** and **Day 6** give points for defeating beasts and calling rallies on terrors.
 * **Other events**: If Armament Competition is also running, you might want to align goals, and use Hero shards on Day 2 of Brawl, and get points for both events.
 * **Last day**: If you are close to a milestone, it might be worth using speedups or other resources to get the extra points.  Save these to the last day, and only use if needed.
+
+## Spenders
+
+This event rewards players for using Gems and obtaining Top-up points.  For people who know they are going to want to stock up on weekly cards, speed ups or consumables, one stratergy is to buy those now, when you will get additonal points when doing so.
+This is a way to getting additional points, that won't rob you of resources you may want to use in future events.
