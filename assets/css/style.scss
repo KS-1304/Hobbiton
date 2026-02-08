@@ -1,4 +1,7 @@
---- --- @import "{{ site.theme }}";
+---
+---
+
+@import "{{ site.theme }}";
 
 /* Table responsiveness and sticky first column on mobile */
 @media screen and (max-width: 64em) {
