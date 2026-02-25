@@ -1108,7 +1108,7 @@
         "level": 1,
         "buff": "Resource Production Speed +5%",
         "OWNER": "TMA",
-        "touching": true
+        "touching": false
       },
       "geometry": {
         "type": "Point",
@@ -1486,7 +1486,7 @@
         "level": 1,
         "buff": "Research Speed +5%",
         "OWNER": "TMA",
-        "touching": true
+        "touching": false
       },
       "geometry": {
         "type": "Point",
