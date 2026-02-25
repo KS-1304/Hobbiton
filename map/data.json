@@ -1162,7 +1162,7 @@
         "level": 1,
         "buff": "Resource Production Speed +5%",
         "OWNER": "HOB",
-        "touching": false
+        "touching": true
       },
       "geometry": {
         "type": "Point",
