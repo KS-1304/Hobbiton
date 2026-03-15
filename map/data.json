@@ -1449,7 +1449,7 @@
         "icon": "scholars",
         "level": 1,
         "buff": "Research Speed +5%",
-        "OWNER": "Agw",
+        "OWNER": "AGw",
         "touching": false
       },
       "geometry": {
