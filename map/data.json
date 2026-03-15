@@ -189,7 +189,7 @@
         "icon": "armory",
         "level": 4,
         "buff": "Troop DEF +8%",
-        "OWNER": "CcC",
+        "OWNER": "HOB",
         "touching": true
       },
       "geometry": {
@@ -388,7 +388,7 @@
         "level": 4,
         "buff": "Troop ATT +8%",
         "OWNER": "FKN",
-        "touching": false
+        "touching": true
       },
       "geometry": {
         "type": "Point",
