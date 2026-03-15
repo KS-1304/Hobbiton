@@ -25,9 +25,9 @@
       "properties": {
         "Type": "Armory",
         "icon": "armory",
-        "level": 4,
-        "buff": "Troop DEF +8%",
-        "OWNER": "LGN",
+        "level": 2,
+        "buff": "Troop DEF +5%",
+        "OWNER": "FKN",
         "touching": false
       },
       "geometry": {
@@ -63,7 +63,7 @@
         "icon": "armory",
         "level": 2,
         "buff": "Troop DEF +5%",
-        "OWNER": "SAX",
+        "OWNER": "LMA",
         "touching": false
       },
       "geometry": {
@@ -135,7 +135,7 @@
         "icon": "armory",
         "level": 2,
         "buff": "Troop DEF +5%",
-        "OWNER": "HOB",
+        "OWNER": "KVK",
         "touching": true
       },
       "geometry": {
@@ -171,7 +171,7 @@
         "icon": "armory",
         "level": 4,
         "buff": "Troop DEF +8%",
-        "OWNER": "CcC",
+        "OWNER": "LGN",
         "touching": false
       },
       "geometry": {
@@ -315,7 +315,7 @@
         "icon": "arsenal",
         "level": 2,
         "buff": "Troop ATT +5%",
-        "OWNER": "RSE",
+        "OWNER": "FKN",
         "touching": false
       },
       "geometry": {
@@ -369,7 +369,7 @@
         "icon": "arsenal",
         "level": 4,
         "buff": "Troop ATT +8%",
-        "OWNER": "LgN",
+        "OWNER": "LGN",
         "touching": false
       },
       "geometry": {
@@ -441,7 +441,7 @@
         "icon": "builders",
         "level": 1,
         "buff": "Construction Speed +5%",
-        "OWNER": "SAX",
+        "OWNER": "LMA",
         "touching": false
       },
       "geometry": {
@@ -495,7 +495,7 @@
         "icon": "builders",
         "level": 3,
         "buff": "Construction Speed +8%",
-        "OWNER": "FRA",
+        "OWNER": "LGN",
         "touching": false
       },
       "geometry": {
@@ -531,7 +531,7 @@
         "icon": "builders",
         "level": 3,
         "buff": "Construction Speed +8%",
-        "OWNER": "LGN",
+        "OWNER": "LgN",
         "touching": false
       },
       "geometry": {
@@ -585,7 +585,7 @@
         "icon": "builders",
         "level": 1,
         "buff": "Construction Speed +5%",
-        "OWNER": "RSE",
+        "OWNER": "LgN",
         "touching": false
       },
       "geometry": {
@@ -711,7 +711,7 @@
         "icon": "drill",
         "level": 2,
         "buff": "Training Speed + 5%",
-        "OWNER": "KVK",
+        "OWNER": "FKN",
         "touching": false
       },
       "geometry": {
@@ -855,7 +855,7 @@
         "icon": "foragers",
         "level": 1,
         "buff": "Gathering Speed +5%",
-        "OWNER": "RSE",
+        "OWNER": "FKN",
         "touching": false
       },
       "geometry": {
@@ -945,7 +945,7 @@
         "icon": "fortress",
         "level": 4,
         "buff": "Fortress",
-        "OWNER": "LGN",
+        "OWNER": "FKN",
         "touching": false
       },
       "geometry": {
@@ -1017,7 +1017,7 @@
         "icon": "lodge",
         "level": 3,
         "buff": "March Speed +15%",
-        "OWNER": "LgN",
+        "OWNER": "FKN",
         "touching": false
       },
       "geometry": {
@@ -1269,7 +1269,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "CcC",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1377,7 +1377,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "HOB",
+        "OWNER": "FKN",
         "touching": false
       },
       "geometry": {
@@ -1395,7 +1395,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "LgN",
+        "OWNER": "CcC",
         "touching": false
       },
       "geometry": {
@@ -1576,7 +1576,7 @@
         "level": 3,
         "buff": "Research Speed +8%",
         "OWNER": "CcC",
-        "touching": false
+        "touching": true
       },
       "geometry": {
         "type": "Point",
@@ -1611,8 +1611,8 @@
         "icon": "scholars",
         "level": 3,
         "buff": "Research Speed +8%",
-        "OWNER": "HOB",
-        "touching": true
+        "OWNER": "FKN",
+        "touching": false
       },
       "geometry": {
         "type": "Point",
