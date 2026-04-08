@@ -369,7 +369,7 @@
         "icon": "arsenal",
         "level": 4,
         "buff": "Troop ATT +8%",
-        "OWNER": "LGN",
+        "OWNER": "LgN",
         "touching": false
       },
       "geometry": {
@@ -387,8 +387,8 @@
         "icon": "arsenal",
         "level": 4,
         "buff": "Troop ATT +8%",
-        "OWNER": "HOB",
-        "touching": false
+        "OWNER": "FKN",
+        "touching": true
       },
       "geometry": {
         "type": "Point",
@@ -549,7 +549,7 @@
         "icon": "builders",
         "level": 3,
         "buff": "Construction Speed +8%",
-        "OWNER": "HOB",
+        "OWNER": "FKN",
         "touching": false
       },
       "geometry": {
@@ -585,7 +585,7 @@
         "icon": "builders",
         "level": 1,
         "buff": "Construction Speed +5%",
-        "OWNER": "LgN",
+        "OWNER": "RSE",
         "touching": false
       },
       "geometry": {
@@ -639,7 +639,7 @@
         "icon": "drill",
         "level": 2,
         "buff": "Training Speed + 5%",
-        "OWNER": "hob",
+        "OWNER": "HOB",
         "touching": true
       },
       "geometry": {
@@ -711,7 +711,7 @@
         "icon": "drill",
         "level": 2,
         "buff": "Training Speed + 5%",
-        "OWNER": "FKN",
+        "OWNER": "KVK",
         "touching": false
       },
       "geometry": {
@@ -729,7 +729,7 @@
         "icon": "drill",
         "level": 2,
         "buff": "Training Speed + 5%",
-        "OWNER": "HOB",
+        "OWNER": "41a",
         "touching": false
       },
       "geometry": {
@@ -855,7 +855,7 @@
         "icon": "foragers",
         "level": 1,
         "buff": "Gathering Speed +5%",
-        "OWNER": "FKN",
+        "OWNER": "RSE",
         "touching": false
       },
       "geometry": {
@@ -1017,7 +1017,7 @@
         "icon": "lodge",
         "level": 3,
         "buff": "March Speed +15%",
-        "OWNER": "TMA",
+        "OWNER": "LgN",
         "touching": false
       },
       "geometry": {
@@ -1143,7 +1143,7 @@
         "icon": "harvest",
         "level": 1,
         "buff": "Resource Production Speed +5%",
-        "OWNER": "KLK",
+        "OWNER": "FKN",
         "touching": false
       },
       "geometry": {
