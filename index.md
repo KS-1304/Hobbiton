@@ -22,19 +22,21 @@
 
 ### All Out
 
-During the All out event:
+During the 'All Out' kill event, the following rules apply to all NAP members:
 
-● Attacks on GATHERING TILES are allowed.  
-● No attacks on NAP and NAP Farms/Academy Cities.  
-● City hits outside NAP are allowed but limited to a maximum of 2 hits per attacker.  
-●  Rallies are not allowed.  
-● No attacks on banners or headquarters.  
+● No town attacks on players inside their alliance territory.  
+● No tile attacks on players inside their alliance territory.  
+● Town attacks are allowed on players who are not in an alliance.  
+● Attacks on other players are only allowed when you are also outside alliance territory (i.e. no attacking from a safe zone).  
+● Maximum 2 attacks per town.  
+● No rallies allowed.  
+● No attacks on banners or HQ.  
+● No town attacks during the castle battle.  
+● Attacks on non-alliance members inside your territory are allowed, from within your territory.  
 
 ### NAP Members
-● CcC/CCC  
-● FKN/KvK  
 ● LGN/LgN  
 ● HOB/hob  
-● TMA/tma  
-● FRA  
-● LMA  
+● CcC/CCC  
+● FRA
+● TMA
