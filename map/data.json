@@ -10,7 +10,9 @@
         "level": 2,
         "buff": "Troop DEF +5%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "LGN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -28,7 +30,10 @@
         "level": 4,
         "buff": "Troop DEF +8%",
         "OWNER": "HOB",
-        "touching": []
+        "touching": [
+          "HOB",
+          "RHb"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -46,7 +51,10 @@
         "level": 2,
         "buff": "Troop DEF +5%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "EQX",
+          "FRA"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -64,7 +72,9 @@
         "level": 2,
         "buff": "Troop DEF +5%",
         "OWNER": "PTG",
-        "touching": []
+        "touching": [
+          "PTG"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -82,7 +92,9 @@
         "level": 2,
         "buff": "Troop DEF +5%",
         "OWNER": "MCC",
-        "touching": []
+        "touching": [
+          "MCC"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -100,7 +112,9 @@
         "level": 2,
         "buff": "Troop DEF +5%",
         "OWNER": "LgN",
-        "touching": []
+        "touching": [
+          "LgN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -118,7 +132,9 @@
         "level": 2,
         "buff": "Troop DEF +5%",
         "OWNER": "mcc",
-        "touching": []
+        "touching": [
+          "mcc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -156,7 +172,9 @@
         "level": 2,
         "buff": "Troop DEF +5%",
         "OWNER": "RHb",
-        "touching": []
+        "touching": [
+          "RHb"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -174,7 +192,12 @@
         "level": 4,
         "buff": "Troop DEF +8%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "FRA",
+          "LGN",
+          "MCC",
+          "PTG"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -193,7 +216,10 @@
         "buff": "Troop DEF +8%",
         "OWNER": "MCC",
         "touching": [
-          "HOB"
+          "FRA",
+          "hob",
+          "mcc",
+          "MCC"
         ]
       },
       "geometry": {
@@ -212,7 +238,9 @@
         "level": 2,
         "buff": "Troop ATT +5%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "FRA"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -230,7 +258,9 @@
         "level": 2,
         "buff": "Troop ATT +5%",
         "OWNER": "PTG",
-        "touching": []
+        "touching": [
+          "PTG"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -248,7 +278,9 @@
         "level": 2,
         "buff": "Troop ATT +5%",
         "OWNER": "MCC",
-        "touching": []
+        "touching": [
+          "MCC"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -266,7 +298,9 @@
         "level": 2,
         "buff": "Troop ATT +5%",
         "OWNER": "LgN",
-        "touching": []
+        "touching": [
+          "LgN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -284,7 +318,10 @@
         "level": 2,
         "buff": "Troop ATT +5%",
         "OWNER": "mcc",
-        "touching": []
+        "touching": [
+          "mcc",
+          "RiP"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -302,7 +339,10 @@
         "level": 2,
         "buff": "Troop ATT +5%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "HoW",
+          "LGN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -320,7 +360,10 @@
         "level": 2,
         "buff": "Troop ATT +5%",
         "OWNER": "RHb",
-        "touching": []
+        "touching": [
+          "RHb",
+          "RSE"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -339,6 +382,8 @@
         "buff": "Troop ATT +5%",
         "OWNER": "HOB",
         "touching": [
+          "CCC",
+          "hob",
           "HOB"
         ]
       },
@@ -358,7 +403,9 @@
         "level": 4,
         "buff": "Troop ATT +8%",
         "OWNER": "MCC",
-        "touching": []
+        "touching": [
+          "MCC"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -376,7 +423,9 @@
         "level": 4,
         "buff": "Troop ATT +8%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "LGN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -394,7 +443,12 @@
         "level": 4,
         "buff": "Troop ATT +8%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "CCC",
+          "FRA",
+          "HOB",
+          "RHb"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -412,7 +466,9 @@
         "level": 1,
         "buff": "Construction Speed +5%",
         "OWNER": "MCC",
-        "touching": []
+        "touching": [
+          "MCC"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -430,7 +486,10 @@
         "level": 1,
         "buff": "Construction Speed +5%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "FRA",
+          "PTG"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -448,7 +507,9 @@
         "level": 1,
         "buff": "Construction Speed +5%",
         "OWNER": "PTG",
-        "touching": []
+        "touching": [
+          "PTG"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -466,7 +527,9 @@
         "level": 1,
         "buff": "Construction Speed +5%",
         "OWNER": "mcc",
-        "touching": []
+        "touching": [
+          "mcc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -484,7 +547,11 @@
         "level": 1,
         "buff": "Construction Speed +5%",
         "OWNER": "RHb",
-        "touching": []
+        "touching": [
+          "DNR",
+          "RHb",
+          "VNU"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -502,7 +569,10 @@
         "level": 3,
         "buff": "Construction Speed +8%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "FRA",
+          "PTG"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -521,7 +591,8 @@
         "buff": "Construction Speed +8%",
         "OWNER": "MCC",
         "touching": [
-          "HOB"
+          "hob",
+          "MCC"
         ]
       },
       "geometry": {
@@ -540,7 +611,10 @@
         "level": 3,
         "buff": "Construction Speed +8%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "LGN",
+          "mcc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -558,7 +632,10 @@
         "level": 3,
         "buff": "Construction Speed +8%",
         "OWNER": "HOB",
-        "touching": []
+        "touching": [
+          "HOB",
+          "RHb"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -576,7 +653,9 @@
         "level": 1,
         "buff": "Construction Speed +5%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "LGN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -594,7 +673,11 @@
         "level": 1,
         "buff": "Construction Speed +5%",
         "OWNER": "LgN",
-        "touching": []
+        "touching": [
+          "HoW",
+          "LgN",
+          "RSE"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -613,6 +696,7 @@
         "buff": "Construction Speed +5%",
         "OWNER": "HOB",
         "touching": [
+          "hob",
           "HOB"
         ]
       },
@@ -632,7 +716,10 @@
         "level": 2,
         "buff": "Training Speed + 5%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "FRA",
+          "PTG"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -651,7 +738,7 @@
         "buff": "Training Speed + 5%",
         "OWNER": "hob",
         "touching": [
-          "HOB"
+          "hob"
         ]
       },
       "geometry": {
@@ -670,7 +757,9 @@
         "level": 2,
         "buff": "Training Speed + 5%",
         "OWNER": "LgN",
-        "touching": []
+        "touching": [
+          "LgN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -688,7 +777,10 @@
         "level": 2,
         "buff": "Training Speed + 5%",
         "OWNER": "mcc",
-        "touching": []
+        "touching": [
+          "mcc",
+          "RiP"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -706,7 +798,9 @@
         "level": 2,
         "buff": "Training Speed + 5%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "LGN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -724,7 +818,9 @@
         "level": 2,
         "buff": "Training Speed + 5%",
         "OWNER": "RHb",
-        "touching": []
+        "touching": [
+          "RHb"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -742,7 +838,10 @@
         "level": 2,
         "buff": "Training Speed + 5%",
         "OWNER": "HOB",
-        "touching": []
+        "touching": [
+          "41a",
+          "HOB"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -760,7 +859,10 @@
         "level": 1,
         "buff": "Gathering Speed +5%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "FRA",
+          "PTG"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -778,7 +880,9 @@
         "level": 1,
         "buff": "Gathering Speed +5%",
         "OWNER": "MCC",
-        "touching": []
+        "touching": [
+          "MCC"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -796,7 +900,9 @@
         "level": 1,
         "buff": "Gathering Speed +5%",
         "OWNER": "LgN",
-        "touching": []
+        "touching": [
+          "LgN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -814,7 +920,11 @@
         "level": 1,
         "buff": "Gathering Speed +5%",
         "OWNER": "mcc",
-        "touching": []
+        "touching": [
+          "FRC",
+          "mcc",
+          "Wnd"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -832,7 +942,9 @@
         "level": 1,
         "buff": "Gathering Speed +5%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "LGN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -851,6 +963,7 @@
         "buff": "Gathering Speed +5%",
         "OWNER": "HOB",
         "touching": [
+          "hob",
           "HOB"
         ]
       },
@@ -870,7 +983,10 @@
         "level": 1,
         "buff": "Gathering Speed +5%",
         "OWNER": "RHb",
-        "touching": []
+        "touching": [
+          "RHb",
+          "RSE"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -978,7 +1094,11 @@
         "level": 3,
         "buff": "March Speed +15%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "FRA",
+          "MCC",
+          "PTG"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -996,7 +1116,9 @@
         "level": 3,
         "buff": "March Speed +15%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "LGN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1015,6 +1137,8 @@
         "buff": "March Speed +15%",
         "OWNER": "HOB",
         "touching": [
+          "FRA",
+          "hob",
           "HOB"
         ]
       },
@@ -1034,7 +1158,10 @@
         "level": 3,
         "buff": "March Speed +15%",
         "OWNER": "mcc",
-        "touching": []
+        "touching": [
+          "mcc",
+          "RHb"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1052,7 +1179,10 @@
         "level": 1,
         "buff": "Resource Production Speed +5%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "FRA",
+          "NOR"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1070,7 +1200,10 @@
         "level": 1,
         "buff": "Resource Production Speed +5%",
         "OWNER": "RiP",
-        "touching": []
+        "touching": [
+          "PTG",
+          "RiP"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1088,7 +1221,9 @@
         "level": 1,
         "buff": "Resource Production Speed +5%",
         "OWNER": "MCC",
-        "touching": []
+        "touching": [
+          "MCC"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1106,7 +1241,9 @@
         "level": 1,
         "buff": "Resource Production Speed +5%",
         "OWNER": "LgN",
-        "touching": []
+        "touching": [
+          "LgN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1124,7 +1261,9 @@
         "level": 1,
         "buff": "Resource Production Speed +5%",
         "OWNER": "mcc",
-        "touching": []
+        "touching": [
+          "mcc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1142,7 +1281,10 @@
         "level": 1,
         "buff": "Resource Production Speed +5%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "HoW",
+          "LGN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1160,7 +1302,10 @@
         "level": 1,
         "buff": "Resource Production Speed +5%",
         "OWNER": "RSE",
-        "touching": []
+        "touching": [
+          "RHb",
+          "RSE"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1179,6 +1324,8 @@
         "buff": "Resource Production Speed +5%",
         "OWNER": "HOB",
         "touching": [
+          "CCC",
+          "hob",
           "HOB"
         ]
       },
@@ -1432,7 +1579,9 @@
         "level": 1,
         "buff": "Training Speed +5%",
         "OWNER": "MCC",
-        "touching": []
+        "touching": [
+          "MCC"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1450,7 +1599,9 @@
         "level": 1,
         "buff": "Research Speed +5%",
         "OWNER": "MCC",
-        "touching": []
+        "touching": [
+          "MCC"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1468,7 +1619,10 @@
         "level": 1,
         "buff": "Research Speed +5%",
         "OWNER": "RiP",
-        "touching": []
+        "touching": [
+          "PTG",
+          "RiP"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1486,7 +1640,9 @@
         "level": 1,
         "buff": "Research Speed +5%",
         "OWNER": "FRA",
-        "touching": []
+        "touching": [
+          "FRA"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1504,7 +1660,9 @@
         "level": 1,
         "buff": "Research Speed +5%",
         "OWNER": "mcc",
-        "touching": []
+        "touching": [
+          "mcc"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1522,7 +1680,9 @@
         "level": 1,
         "buff": "Research Speed +5%",
         "OWNER": "RHb",
-        "touching": []
+        "touching": [
+          "RHb"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1540,7 +1700,10 @@
         "level": 1,
         "buff": "Research Speed +5%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "LgN",
+          "LGN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1559,7 +1722,10 @@
         "buff": "Research Speed +5%",
         "OWNER": "HOB",
         "touching": [
-          "HOB"
+          "CCC",
+          "hob",
+          "HOB",
+          "RiP"
         ]
       },
       "geometry": {
@@ -1578,7 +1744,11 @@
         "level": 3,
         "buff": "Research Speed +8%",
         "OWNER": "LGN",
-        "touching": []
+        "touching": [
+          "FRA",
+          "LGN",
+          "RiP"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1596,7 +1766,9 @@
         "level": 3,
         "buff": "Research Speed +8%",
         "OWNER": "MCC",
-        "touching": []
+        "touching": [
+          "MCC"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1614,7 +1786,10 @@
         "level": 3,
         "buff": "Research Speed +8%",
         "OWNER": "LgN",
-        "touching": []
+        "touching": [
+          "HoW",
+          "LgN"
+        ]
       },
       "geometry": {
         "type": "Point",
@@ -1633,7 +1808,11 @@
         "buff": "Research Speed +8%",
         "OWNER": "FRA",
         "touching": [
-          "HOB"
+          "CCC",
+          "FRA",
+          "HOB",
+          "RHb",
+          "RiP"
         ]
       },
       "geometry": {
@@ -1652,7 +1831,10 @@
         "level": 1,
         "buff": "Research Speed +5%",
         "OWNER": "LgN",
-        "touching": []
+        "touching": [
+          "HoW",
+          "LgN"
+        ]
       },
       "geometry": {
         "type": "Point",
