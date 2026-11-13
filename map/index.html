@@ -67,114 +67,14 @@
             color: #777;
         }
 
-        .FKN {
-            border: 2px dashed white;
-            background-color: orange;
-        }
-
-        .KVK {
-            border: 2px dashed white;
-            background-color: gold;
-        }
-
-        .LGN {
-            border: 2px dashed white;
-            background-color: red;
-        }
-
-        .LgN {
-            border: 2px dashed white;
-            background-color: pink;
-        }
-
-        .CcC {
-            border: 2px dashed white;
-            background-color: green;
-            color: white;
-        }
-
-        .CCC {
-            border: 2px dashed white;
-            background-color: lightseagreen;
-        }
-
-        .HOB {
-            border: 2px dashed black;
-            background-color: white;
-        }
-
-        .hob {
-            border: 2px dashed black;
-            background-color: lightgray;
-        }
-
-        .FRA {
-            border: 2px dashed white;
-            background-color: lightblue;
-        }
-
-        .TMA {
-            border: 2px dashed white;
-            background-color: blue;
-            color: white;
-        }
-
-        .SAX {
-            border: 2px dashed white;
-            background-color: purple;
-            color: white;
-        }
-
-        .RSE {
-            border: 2px dashed white;
-            background-color: hotpink;
-            color: white;
-        }
-
-        .AGw {
-            border: 2px dashed white;
-            background-color: yellow;
-        }
-
-        .RHb {
-            border: 2px dashed white;
-            background-color: orange;
-        }
-
-        .mcc {
-            border: 2px dashed white;
-            background-color: blue;
-            color: white;
-        }
-
-        .MCC {
-            border: 2px dashed white;
-            background-color: green;
-            color: white;
-        }
-
-        .PTG {
-            border: 2px dashed white;
-            background-color: mediumpurple;
-            color: white;
-        }
-
-        .RiP {
-            border: 2px dashed white;
-            background-color: steelblue;
-            color: white;
-        }
-
-        .Rebels {
-            border: 2px dashed white;
-            background-color: dimgray;
-            color: white;
-        }
-
-        .KLK {
-            border: 2px dashed white;
-            background-color: sienna;
-            color: white;
+        /* Coloured disc inside each marker; colours are set inline from alliances.js */
+        .marker-fill {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
         }
 
         .legend {
@@ -183,6 +83,8 @@
             gap: 4px;
             font-family: Arial, sans-serif;
             max-width: 300px;
+            max-height: 40vh;
+            overflow-y: auto;
         }
 
         .legend-item {
@@ -194,11 +96,90 @@
         .legend-box {
             width: 30px;
             height: 20px;
+            flex: none;
         }
 
+        /* "View as": outposts the selected alliance touches and already holds */
         .touching-glow {
             box-shadow: 0 0 12px 10px white !important;
             z-index: 1000 !important;
+        }
+
+        /* "View as": outposts the selected alliance touches but does not hold */
+        .open-glow {
+            box-shadow: 0 0 0 4px #39ff14, 0 0 12px 8px rgba(57, 255, 20, 0.9);
+            z-index: 1001 !important;
+            animation: open-pulse 1.6s ease-in-out infinite;
+        }
+
+        @keyframes open-pulse {
+            0%, 100% {
+                box-shadow: 0 0 0 4px #39ff14, 0 0 10px 6px rgba(57, 255, 20, 0.9);
+            }
+            50% {
+                box-shadow: 0 0 0 4px #39ff14, 0 0 20px 12px rgba(57, 255, 20, 0.45);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .open-glow {
+                animation: none;
+            }
+        }
+
+        /* "View as": everything else */
+        .view-dim {
+            opacity: 0.35;
+        }
+
+        .view-picker {
+            font-family: Arial, sans-serif;
+            max-width: 220px;
+        }
+
+        .view-picker label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 4px;
+        }
+
+        .view-picker select {
+            font-size: 16px;
+            max-width: 100%;
+        }
+
+        .view-key {
+            margin-top: 6px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .key-swatch {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 8px 0 4px;
+            vertical-align: middle;
+            background: #888;
+        }
+
+        .key-owned {
+            box-shadow: 0 0 0 3px white, 0 0 0 4px #999;
+        }
+
+        .key-open {
+            box-shadow: 0 0 0 3px #39ff14;
+        }
+
+        .tag-chip {
+            display: inline-block;
+            padding: 0 5px;
+            margin: 1px 2px 1px 0;
+            border-radius: 3px;
+            font-size: 13px;
+            line-height: 18px;
         }
 
         /* Modal styles for editing owner */
@@ -221,6 +202,10 @@
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             min-width: 300px;
+            max-width: calc(100vw - 32px);
+            max-height: calc(100vh - 32px);
+            overflow-y: auto;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
 
@@ -253,6 +238,63 @@
             margin-bottom: 15px;
             font-size: 13px;
             color: #666;
+        }
+
+        .owner-modal .touching-help {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 8px;
+        }
+
+        .owner-modal .touching-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            max-height: 160px;
+            overflow-y: auto;
+            margin-bottom: 8px;
+        }
+
+        .owner-modal .touching-list label {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin: 0;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .owner-modal .touching-list input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .owner-modal .touching-empty {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .owner-modal .touching-add {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 15px;
+        }
+
+        .owner-modal .touching-add input {
+            flex: 1;
+            min-width: 0;
+            margin-bottom: 0;
+        }
+
+        .owner-modal .touching-add button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            background: #e0e0e0;
+            color: #333;
         }
 
         .owner-modal-buttons {
@@ -303,6 +345,7 @@
     <script src="https://cdn.jsdelivr.net/npm/leaflet-panel-layers@1.3.1/dist/leaflet-panel-layers.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/leaflet-panel-layers@1.3.1/dist/leaflet-panel-layers.min.css"
         rel="stylesheet">
+    <script src="alliances.js"></script>
 
 
 </head>
@@ -311,9 +354,10 @@
     <div id="map"></div>
 
     <script>
-        const CONFIG = {
-            enableTouching: false
-        };
+        var urlParams = new URLSearchParams(window.location.search);
+
+        // "View as" alliance (case-sensitive tag, '' = none). Can be preset with ?view=TAG
+        var viewAs = urlParams.get('view') || '';
 
         // set default zoom level and center point
         var coords = [600, 600];
@@ -434,24 +478,95 @@
             "scholars": '<span class="mdi mdi-24px mdi-bookshelf"></span>'
         }
 
-        // Set-up tooltip, icon, layer group using onEachFeature
+        // Sanctuaries, Fortresses and the King's Castle don't use territory adjacency ("touching").
+        var NO_TOUCHING_ICONS = ['sanctuary', 'fortress', 'castle'];
+
+        function usesTouching(props) {
+            return !!props && NO_TOUCHING_ICONS.indexOf(props.icon) === -1;
+        }
+
+        // Alliance tags whose territory touches this outpost (case-sensitive).
+        function getTouching(props) {
+            return props && Array.isArray(props.touching) ? props.touching : [];
+        }
+
+        function escapeHtml(value) {
+            return String(value === undefined || value === null ? '' : value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        // Case-insensitive alphabetical order, ties broken case-sensitively (so "LGN" and "LgN" stay separate).
+        function compareTags(a, b) {
+            var la = a.toLowerCase(), lb = b.toLowerCase();
+            if (la !== lb) return la < lb ? -1 : 1;
+            return a < b ? -1 : (a > b ? 1 : 0);
+        }
+
+        function sameTagSet(a, b) {
+            if (a.length !== b.length) return false;
+            for (var i = 0; i < a.length; i++) {
+                if (b.indexOf(a[i]) === -1) return false;
+            }
+            return true;
+        }
+
+        // How the selected "View as" alliance relates to this feature: 'held', 'open', 'own' or ''.
+        function viewState(props) {
+            if (!viewAs) return '';
+            if (usesTouching(props) && getTouching(props).indexOf(viewAs) !== -1) {
+                return props.OWNER === viewAs ? 'held' : 'open';
+            }
+            return props.OWNER === viewAs ? 'own' : '';
+        }
+
+        function makeIcon(feature) {
+            var props = feature.properties;
+            var extraClass = '';
+            if (viewAs) {
+                var state = viewState(props);
+                if (state === 'held') extraClass = ' touching-glow';
+                else if (state === 'open') extraClass = ' open-glow';
+                else if (state === '') extraClass = ' view-dim';
+            }
+            return L.divIcon({
+                html: '<div class="marker-fill" style="' + allianceCss(props.OWNER) + '">' + (iconmap[props.icon] || '') + '</div>',
+                iconSize: [42, 42],
+                iconAnchor: [21, 21],
+                className: 'myDivIcon' + extraClass
+            });
+        }
+
+        // Tooltip content is built when the tooltip opens, so it always reflects edits and the "View as" choice.
+        function tooltipContent(layer) {
+            var props = layer.feature.properties;
+            var coordsXY = layer.feature.geometry.coordinates;
+            var html = escapeHtml(props.Type) + ' L' + escapeHtml(props.level) + '</br>X:' + coordsXY[0] + ' Y:' + coordsXY[1] + '</br>Buff: ' + escapeHtml(props.buff) + '<br />Held By:' + escapeHtml(props.OWNER);
+            if (usesTouching(props)) {
+                var touching = getTouching(props);
+                if (touching.length) {
+                    html += '<br />Touching: ' + touching.map(escapeHtml).join(', ');
+                }
+                if (viewState(props) === 'open') {
+                    html += '<br /><b>Open to take for ' + escapeHtml(viewAs) + '</b>';
+                }
+            }
+            return html;
+        }
 
         function updateLayerDisplay(feature, layer) {
-            // Update icon with new owner class
-            layer.setIcon(
-                L.divIcon({
-                    html: iconmap[feature.properties.icon],
-                    iconSize: [42, 42],
-                    iconAnchor: [21, 21],
-                    className: 'myDivIcon ' + feature.properties.OWNER + (CONFIG.enableTouching && feature.properties.touching ? ' touching-glow' : '')
-                })
-            );
-            // Update tooltip with new owner
-            layer.unbindTooltip();
-            layer.bindTooltip(feature.properties.Type + ' L' + feature.properties.level + '</br>X:' + feature.geometry.coordinates[0] + ' Y:' + feature.geometry.coordinates[1] + '</br>Buff: ' + feature.properties.buff + '<br />Held By:' + feature.properties.OWNER);
+            layer.setIcon(makeIcon(feature));
+            // Re-render the tooltip if it is currently open.
+            layer.setTooltipContent(tooltipContent);
         }
 
         function showOwnerEditModal(feature, layer) {
+            var props = feature.properties;
+            var hasTouching = usesTouching(props);
+
             // Create modal overlay
             var overlay = document.createElement('div');
             overlay.className = 'owner-modal-overlay';
@@ -462,20 +577,21 @@
             modal.innerHTML = `
         <h3>Edit Owner</h3>
         <div class="feature-info">
-          <strong>${feature.properties.Type}</strong> Level ${feature.properties.level}<br>
+          <strong>${escapeHtml(props.Type)}</strong> Level ${escapeHtml(props.level)}<br>
           Location: X${feature.geometry.coordinates[0]}, Y${feature.geometry.coordinates[1]}<br>
-          Buff: ${feature.properties.buff}
+          Buff: ${escapeHtml(props.buff)}
         </div>
         <label for="owner-input">Owner:</label>
-        <input type="text" id="owner-input" value="${feature.properties.OWNER}" maxlength="10" autofocus>
-        
-        ${CONFIG.enableTouching ? `
-        <div style="margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
-          <input type="checkbox" id="touching-input" ${feature.properties.touching ? 'checked' : ''} style="width: auto; margin-bottom: 0;">
-          <label for="touching-input" style="margin-bottom: 0;">Touching</label>
+        <input type="text" id="owner-input" maxlength="10" autocomplete="off" autofocus>
+        ${hasTouching ? `
+        <label>Touching alliances:</label>
+        <div class="touching-help">Alliances whose territory borders this outpost.</div>
+        <div class="touching-list"></div>
+        <div class="touching-add">
+          <input type="text" id="touching-add-input" maxlength="10" placeholder="Add alliance tag" autocomplete="off">
+          <button type="button" class="add-btn">Add</button>
         </div>
         ` : ''}
-
         <div class="owner-modal-buttons">
           <button class="cancel-btn">Cancel</button>
           <button class="save-btn">Save</button>
@@ -488,6 +604,80 @@
             var input = modal.querySelector('#owner-input');
             var cancelBtn = modal.querySelector('.cancel-btn');
             var saveBtn = modal.querySelector('.save-btn');
+            var touchingList = modal.querySelector('.touching-list');
+            var addInput = modal.querySelector('#touching-add-input');
+            var addBtn = modal.querySelector('.add-btn');
+
+            input.value = props.OWNER === undefined || props.OWNER === null ? '' : props.OWNER;
+
+            // Touching checkboxes: every alliance in the data, plus anything already on this outpost.
+            function findCheckbox(tag) {
+                var boxes = touchingList.querySelectorAll('input[type="checkbox"]');
+                for (var i = 0; i < boxes.length; i++) {
+                    if (boxes[i].value === tag) return boxes[i];
+                }
+                return null;
+            }
+
+            function addCheckbox(tag, checked) {
+                var empty = touchingList.querySelector('.touching-empty');
+                if (empty) touchingList.removeChild(empty);
+
+                var label = document.createElement('label');
+                var cb = document.createElement('input');
+                cb.type = 'checkbox';
+                cb.value = tag;
+                cb.checked = checked;
+                var chip = document.createElement('span');
+                chip.className = 'tag-chip';
+                chip.setAttribute('style', allianceCss(tag) + ' border: none;');
+                chip.textContent = tag;
+                label.appendChild(cb);
+                label.appendChild(chip);
+                touchingList.appendChild(label);
+                return cb;
+            }
+
+            function addTagFromInput() {
+                var tag = addInput.value.trim();
+                if (!tag) return;
+                var cb = findCheckbox(tag);
+                if (cb) {
+                    cb.checked = true;
+                } else {
+                    addCheckbox(tag, true);
+                }
+                addInput.value = '';
+            }
+
+            if (hasTouching) {
+                var current = getTouching(props);
+                var tags = knownAlliances.slice();
+                current.forEach(function (tag) {
+                    if (tags.indexOf(tag) === -1) tags.push(tag);
+                });
+                tags.sort(compareTags);
+                if (tags.length) {
+                    tags.forEach(function (tag) {
+                        addCheckbox(tag, current.indexOf(tag) !== -1);
+                    });
+                } else {
+                    var empty = document.createElement('div');
+                    empty.className = 'touching-empty';
+                    empty.textContent = 'No alliances yet - add a tag below.';
+                    touchingList.appendChild(empty);
+                }
+
+                addBtn.addEventListener('click', addTagFromInput);
+                addInput.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        addTagFromInput();
+                    } else if (e.key === 'Escape') {
+                        closeModal();
+                    }
+                });
+            }
 
             // Focus and select input
             setTimeout(function () {
@@ -497,35 +687,46 @@
 
             // Close modal function
             function closeModal() {
-                document.body.removeChild(overlay);
+                if (overlay.parentNode) {
+                    overlay.parentNode.removeChild(overlay);
+                }
             }
 
             // Save function
             function saveOwner() {
-                var ownerInput = modal.querySelector('#owner-input');
-                var touchingInput = modal.querySelector('#touching-input');
-
-                var newOwner = ownerInput.value.trim();
+                var newOwner = input.value.trim();
 
                 var changed = false;
 
-                if (newOwner && newOwner !== feature.properties.OWNER) {
-                    feature.properties.OWNER = newOwner;
+                if (newOwner && newOwner !== props.OWNER) {
+                    props.OWNER = newOwner;
                     changed = true;
                 }
 
-                if (CONFIG.enableTouching && touchingInput) {
-                    var newTouching = touchingInput.checked;
-                    if (newTouching !== feature.properties.touching) {
-                        feature.properties.touching = newTouching;
+                if (hasTouching) {
+                    // A tag typed but not yet added still counts.
+                    if (addInput.value.trim()) {
+                        addTagFromInput();
+                    }
+                    var newTouching = [];
+                    var boxes = touchingList.querySelectorAll('input[type="checkbox"]');
+                    for (var i = 0; i < boxes.length; i++) {
+                        if (boxes[i].checked && newTouching.indexOf(boxes[i].value) === -1) {
+                            newTouching.push(boxes[i].value);
+                        }
+                    }
+                    newTouching.sort(compareTags);
+                    if (!Array.isArray(props.touching) || !sameTagSet(newTouching, props.touching)) {
+                        props.touching = newTouching;
                         changed = true;
                     }
                 }
 
                 if (changed) {
                     updateLayerDisplay(feature, layer);
+                    refreshAllianceControls();
                     // Update info pane if visible
-                    info.update(feature.properties, feature.geometry);
+                    info.update(props, feature.geometry);
                 }
                 closeModal();
             }
@@ -554,18 +755,13 @@
             L.DomEvent.disableClickPropagation(overlay);
         }
 
+        // Every marker layer, so the "View as" choice can restyle them all.
+        var featureLayers = [];
+
         function onEachFeature(feature, layer) {
-            // does this feature have a property named popupContent?
             if (feature.properties && feature.properties.Type) {
-                layer.setIcon(
-                    L.divIcon({
-                        html: iconmap[feature.properties.icon],
-                        iconSize: [42, 42],
-                        iconAnchor: [21, 21],
-                        className: 'myDivIcon ' + feature.properties.OWNER + (CONFIG.enableTouching && feature.properties.touching ? ' touching-glow' : '')
-                    })
-                );
-                layer.bindTooltip(feature.properties.Type + ' L' + feature.properties.level + '</br>X:' + feature.geometry.coordinates[0] + ' Y:' + feature.geometry.coordinates[1] + '</br>Buff: ' + feature.properties.buff + '<br />Held By:' + feature.properties.OWNER);
+                layer.setIcon(makeIcon(feature));
+                layer.bindTooltip(tooltipContent);
                 layer.on({
                     mouseover: highlightFeature,
                     mouseout: resetHighlight,
@@ -573,8 +769,62 @@
                         showOwnerEditModal(feature, layer);
                     }
                 });
-                layersmap[feature.properties.icon].addLayer(layer);
+                if (layersmap[feature.properties.icon]) {
+                    layersmap[feature.properties.icon].addLayer(layer);
+                }
+                featureLayers.push(layer);
             }
+        }
+
+        // ALLIANCES PRESENT IN THE LOADED DATA (legend, "View as" picker, edit modal)
+
+        // Alliances holding at least one feature (legend).
+        var ownerAlliances = [];
+        // Owners plus every tag found in a touching list (picker and edit modal).
+        var knownAlliances = [];
+
+        function collectAlliances() {
+            var owners = Object.create(null);
+            var known = Object.create(null);
+            var features = (geojsonFeature && geojsonFeature.features) || [];
+            features.forEach(function (f) {
+                var props = f.properties;
+                if (!props) return;
+                if (isAllianceTag(props.OWNER)) {
+                    owners[props.OWNER] = true;
+                    known[props.OWNER] = true;
+                }
+                if (usesTouching(props)) {
+                    getTouching(props).forEach(function (tag) {
+                        if (isAllianceTag(tag)) known[tag] = true;
+                    });
+                }
+            });
+            ownerAlliances = Object.keys(owners).sort(compareTags);
+            knownAlliances = Object.keys(known).sort(compareTags);
+        }
+
+        function refreshAllianceControls() {
+            collectAlliances();
+            legend.render();
+            viewPicker.render();
+        }
+
+        function setViewAs(tag) {
+            viewAs = tag || '';
+            featureLayers.forEach(function (layer) {
+                updateLayerDisplay(layer.feature, layer);
+            });
+            viewPicker.render();
+
+            // Keep the choice in the URL so the view can be shared.
+            var url = new URL(window.location);
+            if (viewAs) {
+                url.searchParams.set('view', viewAs);
+            } else {
+                url.searchParams.delete('view');
+            }
+            window.history.replaceState({}, '', url);
         }
 
 
@@ -582,7 +832,6 @@
 
         var geojsonFeature;
 
-        var urlParams = new URLSearchParams(window.location.search);
         var archive = urlParams.get('archive');
         var dataFile = archive ? `data-${archive}.json` : 'data.json';
 
@@ -594,6 +843,8 @@
                 L.geoJSON(geojsonFeature, {
                     onEachFeature: onEachFeature
                 }).addTo(map);
+                // Legend and "View as" picker come from the loaded data.
+                refreshAllianceControls();
             })
             .catch(error => {
                 console.error('Error loading GeoJSON data:', error);
@@ -743,7 +994,21 @@
         info.update = function (props, coords, isTemp = false) {
             let content = '<h4>Outpost Details</h4>';
             if (props) {
-                content += props.Type + ' L' + props.level + '</br>X' + coords.coordinates[0] + ',Y' + coords.coordinates[1] + '<br />Buff: ' + props.buff + '<br />Held By:' + props.OWNER;
+                content += escapeHtml(props.Type) + ' L' + escapeHtml(props.level) + '</br>X' + coords.coordinates[0] + ',Y' + coords.coordinates[1] + '<br />Buff: ' + escapeHtml(props.buff) + '<br />Held By:' + escapeHtml(props.OWNER);
+                if (usesTouching(props)) {
+                    var touching = getTouching(props);
+                    content += '<br />Touching: ';
+                    if (touching.length) {
+                        content += touching.map(function (tag) {
+                            return '<span class="tag-chip" style="' + allianceCss(tag) + ' border: none;">' + escapeHtml(tag) + '</span>';
+                        }).join('');
+                    } else {
+                        content += 'none';
+                    }
+                    if (viewState(props) === 'open') {
+                        content += '<br /><b>Open to take for ' + escapeHtml(viewAs) + '</b>';
+                    }
+                }
             } else if (isTemp) {
                 content = '<h4>Temporary Location</h4>';
                 const x = coords[0];
@@ -758,29 +1023,95 @@
         };
 
         info.addTo(map);
-        // Create legend for owners
+        // Create legend for owners: every alliance holding at least one feature in the loaded data.
         var legend = L.control({ position: 'bottomright' });
         legend.onAdd = function (map) {
+            this._div = L.DomUtil.create('div', 'info legend');
+            L.DomEvent.disableClickPropagation(this._div);
+            L.DomEvent.disableScrollPropagation(this._div);
+            this.render();
+            return this._div;
+        };
 
-            var div = L.DomUtil.create('div', 'info legend');
-
-            div.innerHTML += '<div class="legend-item"><div class="legend-box LGN"></div>LGN</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box LgN"></div>LgN</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box HOB"></div>HOB</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box hob"></div>hob</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box FRA"></div>FRA</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box MCC"></div>MCC</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box mcc"></div>mcc</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box RHb"></div>RHb</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box PTG"></div>PTG</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box RiP"></div>RiP</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box RSE"></div>RSE</div>'
-            div.innerHTML += '<div class="legend-item"><div class="legend-box KLK"></div>KLK</div>'
-
-            return div;
+        legend.render = function () {
+            if (!this._div) return;
+            var div = this._div;
+            div.innerHTML = '';
+            ownerAlliances.forEach(function (tag) {
+                var item = L.DomUtil.create('div', 'legend-item', div);
+                var box = L.DomUtil.create('div', 'legend-box', item);
+                box.setAttribute('style', allianceCss(tag));
+                item.appendChild(document.createTextNode(tag));
+            });
+            div.style.display = ownerAlliances.length ? '' : 'none';
         };
 
         legend.addTo(map);
+
+        // "View as" picker: highlights the outposts an alliance's territory touches.
+        var viewPicker = L.control({ position: 'bottomleft' });
+        viewPicker.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'info view-picker');
+            var label = L.DomUtil.create('label', '', div);
+            label.htmlFor = 'view-as-select';
+            label.textContent = 'View as';
+            var select = L.DomUtil.create('select', '', div);
+            select.id = 'view-as-select';
+            this._key = L.DomUtil.create('div', 'view-key', div);
+            this._select = select;
+            this._div = div;
+
+            L.DomEvent.disableClickPropagation(div);
+            L.DomEvent.disableScrollPropagation(div);
+            L.DomEvent.on(select, 'change', function () {
+                setViewAs(select.value);
+            });
+
+            this.render();
+            return div;
+        };
+
+        viewPicker.render = function () {
+            if (!this._div) return;
+            var select = this._select;
+
+            var tags = knownAlliances.slice();
+            if (viewAs && tags.indexOf(viewAs) === -1) {
+                tags.push(viewAs);
+                tags.sort(compareTags);
+            }
+
+            select.innerHTML = '';
+            var none = document.createElement('option');
+            none.value = '';
+            none.textContent = '(none)';
+            select.appendChild(none);
+            tags.forEach(function (tag) {
+                var option = document.createElement('option');
+                option.value = tag;
+                option.textContent = tag;
+                select.appendChild(option);
+            });
+            select.value = viewAs;
+
+            var key = this._key;
+            if (viewAs) {
+                var held = 0, open = 0;
+                featureLayers.forEach(function (layer) {
+                    var state = viewState(layer.feature.properties);
+                    if (state === 'held') held++;
+                    else if (state === 'open') open++;
+                });
+                key.innerHTML = '<div><span class="key-swatch key-owned"></span>Touching, held (' + held + ')</div>' +
+                    '<div><span class="key-swatch key-open"></span>Open to take (' + open + ')</div>';
+                key.style.display = '';
+            } else {
+                key.innerHTML = '';
+                key.style.display = 'none';
+            }
+        };
+
+        viewPicker.addTo(map);
 
         // Export function
         function exportGeoJSON() {
