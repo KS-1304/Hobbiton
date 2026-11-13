@@ -27,7 +27,7 @@
         "icon": "armory",
         "level": 4,
         "buff": "Troop DEF +8%",
-        "OWNER": "LGN",
+        "OWNER": "HOB",
         "touching": false
       },
       "geometry": {
@@ -63,7 +63,7 @@
         "icon": "armory",
         "level": 2,
         "buff": "Troop DEF +5%",
-        "OWNER": "SAX",
+        "OWNER": "PTG",
         "touching": false
       },
       "geometry": {
@@ -81,7 +81,7 @@
         "icon": "armory",
         "level": 2,
         "buff": "Troop DEF +5%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": false
       },
       "geometry": {
@@ -117,7 +117,7 @@
         "icon": "armory",
         "level": 2,
         "buff": "Troop DEF +5%",
-        "OWNER": "TMA",
+        "OWNER": "mcc",
         "touching": false
       },
       "geometry": {
@@ -153,7 +153,7 @@
         "icon": "armory",
         "level": 2,
         "buff": "Troop DEF +5%",
-        "OWNER": "FKN",
+        "OWNER": "RHb",
         "touching": false
       },
       "geometry": {
@@ -171,7 +171,7 @@
         "icon": "armory",
         "level": 4,
         "buff": "Troop DEF +8%",
-        "OWNER": "CcC",
+        "OWNER": "LGN",
         "touching": false
       },
       "geometry": {
@@ -189,7 +189,7 @@
         "icon": "armory",
         "level": 4,
         "buff": "Troop DEF +8%",
-        "OWNER": "HOB",
+        "OWNER": "MCC",
         "touching": true
       },
       "geometry": {
@@ -225,7 +225,7 @@
         "icon": "arsenal",
         "level": 2,
         "buff": "Troop ATT +5%",
-        "OWNER": "FRA",
+        "OWNER": "PTG",
         "touching": false
       },
       "geometry": {
@@ -243,7 +243,7 @@
         "icon": "arsenal",
         "level": 2,
         "buff": "Troop ATT +5%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": false
       },
       "geometry": {
@@ -279,7 +279,7 @@
         "icon": "arsenal",
         "level": 2,
         "buff": "Troop ATT +5%",
-        "OWNER": "TMA",
+        "OWNER": "mcc",
         "touching": false
       },
       "geometry": {
@@ -315,7 +315,7 @@
         "icon": "arsenal",
         "level": 2,
         "buff": "Troop ATT +5%",
-        "OWNER": "RSE",
+        "OWNER": "RHb",
         "touching": false
       },
       "geometry": {
@@ -351,7 +351,7 @@
         "icon": "arsenal",
         "level": 4,
         "buff": "Troop ATT +8%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": false
       },
       "geometry": {
@@ -387,7 +387,7 @@
         "icon": "arsenal",
         "level": 4,
         "buff": "Troop ATT +8%",
-        "OWNER": "HOB",
+        "OWNER": "FRA",
         "touching": false
       },
       "geometry": {
@@ -405,7 +405,7 @@
         "icon": "builders",
         "level": 1,
         "buff": "Construction Speed +5%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": false
       },
       "geometry": {
@@ -441,7 +441,7 @@
         "icon": "builders",
         "level": 1,
         "buff": "Construction Speed +5%",
-        "OWNER": "SAX",
+        "OWNER": "PTG",
         "touching": false
       },
       "geometry": {
@@ -459,7 +459,7 @@
         "icon": "builders",
         "level": 1,
         "buff": "Construction Speed +5%",
-        "OWNER": "TMA",
+        "OWNER": "mcc",
         "touching": false
       },
       "geometry": {
@@ -477,7 +477,7 @@
         "icon": "builders",
         "level": 1,
         "buff": "Construction Speed +5%",
-        "OWNER": "FKN",
+        "OWNER": "RHb",
         "touching": false
       },
       "geometry": {
@@ -513,7 +513,7 @@
         "icon": "builders",
         "level": 3,
         "buff": "Construction Speed +8%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": true
       },
       "geometry": {
@@ -675,7 +675,7 @@
         "icon": "drill",
         "level": 2,
         "buff": "Training Speed + 5%",
-        "OWNER": "TMA",
+        "OWNER": "mcc",
         "touching": false
       },
       "geometry": {
@@ -711,7 +711,7 @@
         "icon": "drill",
         "level": 2,
         "buff": "Training Speed + 5%",
-        "OWNER": "FKN",
+        "OWNER": "RHb",
         "touching": false
       },
       "geometry": {
@@ -765,7 +765,7 @@
         "icon": "foragers",
         "level": 1,
         "buff": "Gathering Speed +5%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": false
       },
       "geometry": {
@@ -801,7 +801,7 @@
         "icon": "foragers",
         "level": 1,
         "buff": "Gathering Speed +5%",
-        "OWNER": "TMA",
+        "OWNER": "mcc",
         "touching": false
       },
       "geometry": {
@@ -855,7 +855,7 @@
         "icon": "foragers",
         "level": 1,
         "buff": "Gathering Speed +5%",
-        "OWNER": "FKN",
+        "OWNER": "RHb",
         "touching": false
       },
       "geometry": {
@@ -891,7 +891,7 @@
         "icon": "fortress",
         "level": 4,
         "buff": "Fortress",
-        "OWNER": "HOB",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -909,7 +909,7 @@
         "icon": "fortress",
         "level": 4,
         "buff": "Fortress",
-        "OWNER": "CcC",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -927,7 +927,7 @@
         "icon": "fortress",
         "level": 4,
         "buff": "Fortress",
-        "OWNER": "LGN",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -945,7 +945,7 @@
         "icon": "fortress",
         "level": 4,
         "buff": "Fortress",
-        "OWNER": "LGN",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -963,7 +963,7 @@
         "icon": "lodge",
         "level": 3,
         "buff": "March Speed +15%",
-        "OWNER": "CcC",
+        "OWNER": "FRA",
         "touching": false
       },
       "geometry": {
@@ -1017,7 +1017,7 @@
         "icon": "lodge",
         "level": 3,
         "buff": "March Speed +15%",
-        "OWNER": "TMA",
+        "OWNER": "mcc",
         "touching": false
       },
       "geometry": {
@@ -1053,7 +1053,7 @@
         "icon": "harvest",
         "level": 1,
         "buff": "Resource Production Speed +5%",
-        "OWNER": "AGw",
+        "OWNER": "RiP",
         "touching": false
       },
       "geometry": {
@@ -1071,7 +1071,7 @@
         "icon": "harvest",
         "level": 1,
         "buff": "Resource Production Speed +5%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": false
       },
       "geometry": {
@@ -1107,7 +1107,7 @@
         "icon": "harvest",
         "level": 1,
         "buff": "Resource Production Speed +5%",
-        "OWNER": "TMA",
+        "OWNER": "mcc",
         "touching": false
       },
       "geometry": {
@@ -1143,7 +1143,7 @@
         "icon": "harvest",
         "level": 1,
         "buff": "Resource Production Speed +5%",
-        "OWNER": "KLK",
+        "OWNER": "RSE",
         "touching": false
       },
       "geometry": {
@@ -1197,7 +1197,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "CcC",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1215,7 +1215,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "LGN",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1233,7 +1233,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "LGN",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1251,7 +1251,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "FRA",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1269,7 +1269,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "CcC",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1287,7 +1287,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "TMA",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1305,7 +1305,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "HOB",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1323,7 +1323,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "CcC",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1341,7 +1341,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "FRA",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1359,7 +1359,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "TMA",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1377,7 +1377,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "HOB",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1395,7 +1395,7 @@
         "icon": "sanctuary",
         "level": 3,
         "buff": "Sanctuary",
-        "OWNER": "LgN",
+        "OWNER": "Rebels",
         "touching": false
       },
       "geometry": {
@@ -1413,7 +1413,7 @@
         "icon": "drill",
         "level": 1,
         "buff": "Training Speed +5%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": false
       },
       "geometry": {
@@ -1431,7 +1431,7 @@
         "icon": "scholars",
         "level": 1,
         "buff": "Research Speed +5%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": false
       },
       "geometry": {
@@ -1449,7 +1449,7 @@
         "icon": "scholars",
         "level": 1,
         "buff": "Research Speed +5%",
-        "OWNER": "AGw",
+        "OWNER": "RiP",
         "touching": false
       },
       "geometry": {
@@ -1485,7 +1485,7 @@
         "icon": "scholars",
         "level": 1,
         "buff": "Research Speed +5%",
-        "OWNER": "TMA",
+        "OWNER": "mcc",
         "touching": false
       },
       "geometry": {
@@ -1503,7 +1503,7 @@
         "icon": "scholars",
         "level": 1,
         "buff": "Research Speed +5%",
-        "OWNER": "FKN",
+        "OWNER": "RHb",
         "touching": false
       },
       "geometry": {
@@ -1575,7 +1575,7 @@
         "icon": "scholars",
         "level": 3,
         "buff": "Research Speed +8%",
-        "OWNER": "CcC",
+        "OWNER": "MCC",
         "touching": false
       },
       "geometry": {
@@ -1611,7 +1611,7 @@
         "icon": "scholars",
         "level": 3,
         "buff": "Research Speed +8%",
-        "OWNER": "HOB",
+        "OWNER": "FRA",
         "touching": true
       },
       "geometry": {
